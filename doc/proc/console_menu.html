@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	 <meta name="description" content="Stand-alone static site generator for Linux console">
+    
+    <meta name="author" content="Chris MacMackin" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>console_menu &ndash; fBlog</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">fBlog </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+				
+                
+            <li><a href="../lists/files.html">Source Files</a></li>
+				
+				
+            <li><a href="../lists/modules.html">Modules</a></li>
+				
+				
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+				
+								
+            <li><a href="../lists/types.html">Derived Types</a></li>
+				
+				
+            <li><a href="../program/fblog.html">Program</a></li>
+				
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>console_menu
+    <small>Function</small>
+    
+    </h1>
+	 
+<div class="row">
+<div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+    <li><i class="fa fa-code"></i><a href="../src/mod_tty.f08"> Source File</a></li>
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+     <li><a href='../sourcefile/mod_tty.f08.html'>mod_tty.f08</a></li>
+  
+     <li><a href='../module/tty_m.html'>tty_m</a></li>
+  
+     <li class="active">console_menu</li>
+  </ol>
+</div>
+</div>
+</div>
+    
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-3">
+    
+<div id="sidebar">
+  
+  
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars">Variables</a></h3></div>
+    <div id="vars" class="panel-collapse collapse">
+      <div class="list-group">
+        
+        <a class="list-group-item" href="../proc/console_menu.html#variable-keystroke">keystroke</a>
+        
+        <a class="list-group-item" href="../proc/console_menu.html#variable-item">item</a>
+        
+        <a class="list-group-item" href="../proc/console_menu.html#variable-read_items">read_items</a>
+        
+        <a class="list-group-item" href="../proc/console_menu.html#variable-command_status%7E13">command_status</a>
+        
+        <a class="list-group-item" href="../proc/console_menu.html#variable-exit_status%7E13">exit_status</a>
+        
+        <a class="list-group-item" href="../proc/console_menu.html#variable-i%7E7">i</a>
+        
+        <a class="list-group-item" href="../proc/console_menu.html#variable-ios%7E11">ios</a>
+        
+        <a class="list-group-item" href="../proc/console_menu.html#variable-j%7E4">j</a>
+        
+        <a class="list-group-item" href="../proc/console_menu.html#variable-k%7E2">k</a>
+        
+        <a class="list-group-item" href="../proc/console_menu.html#variable-pos">pos</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+    <div class="list-group">
+      <a class="list-group-item" href="../proc/console_menu.html#src">console_menu</a>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#allprocs">All Procedures</a></h3></div>
+    <div id="allprocs" class="panel-collapse collapse">
+        <div class="list-group">
+          
+          <a class="list-group-item" href="../proc/add_post.html">add_post</a>
+          
+          <a class="list-group-item" href="../proc/clock.html">clock</a>
+          
+          <a class="list-group-item" href="../proc/config.html">config</a>
+          
+          <a class="list-group-item" href="../proc/console.html">console</a>
+          
+          <a class="list-group-item" href="../proc/console_menu.html">console_menu</a>
+          
+          <a class="list-group-item" href="../proc/create_blog.html">create_blog</a>
+          
+          <a class="list-group-item" href="../proc/delete_css.html">delete_css</a>
+          
+          <a class="list-group-item" href="../proc/delete_page.html">delete_page</a>
+          
+          <a class="list-group-item" href="../proc/delete_post.html">delete_post</a>
+          
+          <a class="list-group-item" href="../proc/edit_css.html">edit_css</a>
+          
+          <a class="list-group-item" href="../proc/edit_page.html">edit_page</a>
+          
+          <a class="list-group-item" href="../proc/edit_post.html">edit_post</a>
+          
+          <a class="list-group-item" href="../proc/html_home.html">html_home</a>
+          
+          <a class="list-group-item" href="../proc/html_month_archive.html">html_month_archive</a>
+          
+          <a class="list-group-item" href="../proc/html_page.html">html_page</a>
+          
+          <a class="list-group-item" href="../proc/html_permalink.html">html_permalink</a>
+          
+          <a class="list-group-item" href="../proc/html_year_archive.html">html_year_archive</a>
+          
+          <a class="list-group-item" href="../proc/i18n.html">i18n</a>
+          
+          <a class="list-group-item" href="../proc/init_conf.html">init_conf</a>
+          
+          <a class="list-group-item" href="../proc/init_data.html">init_data</a>
+          
+          <a class="list-group-item" href="../proc/list_css.html">list_css</a>
+          
+          <a class="list-group-item" href="../proc/list_pages.html">list_pages</a>
+          
+          <a class="list-group-item" href="../proc/list_posts.html">list_posts</a>
+          
+          <a class="list-group-item" href="../proc/menu_css.html">menu_css</a>
+          
+          <a class="list-group-item" href="../proc/menu_main.html">menu_main</a>
+          
+          <a class="list-group-item" href="../proc/menu_page.html">menu_page</a>
+          
+          <a class="list-group-item" href="../proc/menu_post.html">menu_post</a>
+          
+          <a class="list-group-item" href="../proc/terminate.html">terminate</a>
+          
+          <a class="list-group-item" href="../proc/update.html">update</a>
+          
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+    </div>
+    
+    <div class="col-lg-9" id='text'>
+    <h2>
+private function console_menu(items)
+    
+    
+    
+</h2>
+    
+  
+
+
+
+    <h3>Arguments</h3>
+    
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-items"></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>items</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    
+    
+    
+    
+    
+    
+    
+	 <h3>Return Value <small><span class="anchor" id="variable-console_menu"></span>character(len=1)
+  </small></h3>
+    
+    
+    
+    <h3>Description</h3>
+    <p>Auxilary routine for displaying the menus in console mode.</p>
+    
+    
+     <h3>Calls</h3>
+     
+                <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: proc~~console_menu~~CallsGraph Pages: 1 -->
+<svg id="procconsole_menuCallsGraph" width="182pt" height="32pt"
+ viewBox="0.00 0.00 182.00 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~console_menu~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>proc~~console_menu~~CallsGraph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-28 178,-28 178,4 -4,4"/>
+<!-- proc~console_menu -->
+<g id="proc~~console_menu~~CallsGraph_node1" class="node"><title>proc~console_menu</title>
+<polygon fill="none" stroke="black" points="81,-24 0,-24 0,-0 81,-0 81,-24"/>
+<text text-anchor="middle" x="40.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">console_menu</text>
+</g>
+<!-- terminate -->
+<g id="proc~~console_menu~~CallsGraph_node2" class="node"><title>terminate</title>
+<polygon fill="#777777" stroke="#777777" points="174,-24 117,-24 117,-0 174,-0 174,-24"/>
+<text text-anchor="middle" x="145.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">terminate</text>
+</g>
+<!-- proc~console_menu&#45;&gt;terminate -->
+<g id="proc~~console_menu~~CallsGraph_edge1" class="edge"><title>proc~console_menu&#45;&gt;terminate</title>
+<path fill="none" stroke="black" d="M81.0279,-12C89.4047,-12 98.2288,-12 106.546,-12"/>
+<polygon fill="black" stroke="black" points="106.737,-15.5001 116.737,-12 106.737,-8.5001 106.737,-15.5001"/>
+</g>
+</g>
+</svg>
+</div>
+                <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+                <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                      </div>
+                      <div class="modal-body">
+                        
+Nodes of different colours represent the following:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="641pt" height="26pt"
+ viewBox="0.00 0.00 641.00 26.18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(0.818124 0.818124) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-28 779.5,-28 779.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node"><title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,-0 54,-0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node"><title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="136,-24 72,-24 72,-0 136,-0 136,-24"/>
+<text text-anchor="middle" x="104" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Type -->
+<g id="node3" class="node"><title>Type</title>
+<polygon fill="#5cb85c" stroke="#5cb85c" points="208,-24 154,-24 154,-0 208,-0 208,-24"/>
+<text text-anchor="middle" x="181" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type</text>
+</g>
+<!-- Subroutine -->
+<g id="node4" class="node"><title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="288,-24 226,-24 226,-0 288,-0 288,-24"/>
+<text text-anchor="middle" x="257" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node5" class="node"><title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="360,-24 306,-24 306,-0 360,-0 360,-24"/>
+<text text-anchor="middle" x="333" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node6" class="node"><title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="433.5,-24 378.5,-24 378.5,-0 433.5,-0 433.5,-24"/>
+<text text-anchor="middle" x="406" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node7" class="node"><title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="588,-24 452,-24 452,-0 588,-0 588,-24"/>
+<text text-anchor="middle" x="520" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node8" class="node"><title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="660,-24 606,-24 606,-0 660,-0 660,-24"/>
+<text text-anchor="middle" x="633" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node9" class="node"><title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="775.5,-24 678.5,-24 678.5,-0 775.5,-0 775.5,-24"/>
+<text text-anchor="middle" x="727" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<h5>Module Graph</h5>
+<p>Solid arrows point from a parent (sub)module to the submodule which is
+descended from it. Dashed arrows point from a module being used to the
+module using it.</p>
+<h5>Type Graph</h5>
+<p>Solid arrows point from one derived type to another which extends
+(inherits from) it. Dashed arrows point from a derived type to another
+type containing it as a components, with a label listing the name(s) of
+said component(s).</p>
+<h5>Call Graph</h5>
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+     
+     
+     <h3>Called By</h3>
+     
+                <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: proc~~console_menu~~CalledByGraph Pages: 1 -->
+<svg id="procconsole_menuCalledByGraph" width="386pt" height="211pt"
+ viewBox="0.00 0.00 386.00 211.35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~console_menu~~CalledByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 207.355)">
+<title>proc~~console_menu~~CalledByGraph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-207.355 382,-207.355 382,4 -4,4"/>
+<!-- proc~console_menu -->
+<g id="proc~~console_menu~~CalledByGraph_node1" class="node"><title>proc~console_menu</title>
+<polygon fill="none" stroke="black" points="378,-102.332 297,-102.332 297,-78.3318 378,-78.3318 378,-102.332"/>
+<text text-anchor="middle" x="337.5" y="-87.9318" font-family="Helvetica,sans-Serif" font-size="10.50">console_menu</text>
+</g>
+<!-- proc~console -->
+<g id="proc~~console_menu~~CalledByGraph_node2" class="node"><title>proc~console</title>
+<g id="a_proc~~console_menu~~CalledByGraph_node2"><a xlink:href="../proc/console.html" xlink:title="console">
+<polygon fill="#d9534f" stroke="#d9534f" points="54,-161.332 0,-161.332 0,-137.332 54,-137.332 54,-161.332"/>
+<text text-anchor="middle" x="27" y="-146.932" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">console</text>
+</a>
+</g>
+</g>
+<!-- proc~console&#45;&gt;proc~console_menu -->
+<g id="proc~~console_menu~~CalledByGraph_edge12" class="edge"><title>proc~console&#45;&gt;proc~console_menu</title>
+<path fill="none" stroke="black" d="M49.8231,-161.449C92.6278,-183.47 189.64,-224.654 261,-189.332 293.545,-173.222 315.89,-135.621 327.406,-111.673"/>
+<polygon fill="black" stroke="black" points="330.695,-112.898 331.677,-102.349 324.331,-109.983 330.695,-112.898"/>
+</g>
+<!-- proc~menu_main -->
+<g id="proc~~console_menu~~CalledByGraph_node6" class="node"><title>proc~menu_main</title>
+<g id="a_proc~~console_menu~~CalledByGraph_node6"><a xlink:href="../proc/menu_main.html" xlink:title="menu_main">
+<polygon fill="#d9534f" stroke="#d9534f" points="157,-102.332 90,-102.332 90,-78.3318 157,-78.3318 157,-102.332"/>
+<text text-anchor="middle" x="123.5" y="-87.9318" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">menu_main</text>
+</a>
+</g>
+</g>
+<!-- proc~console&#45;&gt;proc~menu_main -->
+<g id="proc~~console_menu~~CalledByGraph_edge10" class="edge"><title>proc~console&#45;&gt;proc~menu_main</title>
+<path fill="none" stroke="black" d="M47.5805,-137.107C61.2285,-128.586 79.6321,-117.096 94.7834,-107.636"/>
+<polygon fill="black" stroke="black" points="96.639,-110.604 103.268,-102.339 92.9318,-104.666 96.639,-110.604"/>
+</g>
+<!-- proc~menu_page -->
+<g id="proc~~console_menu~~CalledByGraph_node3" class="node"><title>proc~menu_page</title>
+<g id="a_proc~~console_menu~~CalledByGraph_node3"><a xlink:href="../proc/menu_page.html" xlink:title="menu_page">
+<polygon fill="#d9534f" stroke="#d9534f" points="261,-162.332 193,-162.332 193,-138.332 261,-138.332 261,-162.332"/>
+<text text-anchor="middle" x="227" y="-147.932" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">menu_page</text>
+</a>
+</g>
+</g>
+<!-- proc~menu_page&#45;&gt;proc~console_menu -->
+<g id="proc~~console_menu~~CalledByGraph_edge13" class="edge"><title>proc~menu_page&#45;&gt;proc~console_menu</title>
+<path fill="none" stroke="black" d="M249.957,-138.19C265.987,-129.325 287.931,-117.19 305.711,-107.358"/>
+<polygon fill="black" stroke="black" points="307.519,-110.358 314.576,-102.456 304.131,-104.232 307.519,-110.358"/>
+</g>
+<!-- proc~menu_page&#45;&gt;proc~menu_page -->
+<g id="proc~~console_menu~~CalledByGraph_edge2" class="edge"><title>proc~menu_page&#45;&gt;proc~menu_page</title>
+<path fill="none" stroke="black" d="M210.135,-162.346C204.245,-171.303 209.867,-180.332 227,-180.332 237.44,-180.332 243.606,-176.979 245.497,-172.333"/>
+<polygon fill="black" stroke="black" points="248.932,-171.65 243.865,-162.346 242.024,-172.779 248.932,-171.65"/>
+</g>
+<!-- proc~menu_page&#45;&gt;proc~menu_main -->
+<g id="proc~~console_menu~~CalledByGraph_edge11" class="edge"><title>proc~menu_page&#45;&gt;proc~menu_main</title>
+<path fill="none" stroke="black" d="M194.963,-138.26C178.946,-129.602 159.828,-118.074 145.549,-108.369"/>
+<polygon fill="black" stroke="black" points="147.548,-105.496 137.355,-102.604 143.52,-111.221 147.548,-105.496"/>
+</g>
+<!-- proc~menu_css -->
+<g id="proc~~console_menu~~CalledByGraph_node4" class="node"><title>proc~menu_css</title>
+<g id="a_proc~~console_menu~~CalledByGraph_node4"><a xlink:href="../proc/menu_css.html" xlink:title="menu_css">
+<polygon fill="#d9534f" stroke="#d9534f" points="257,-102.332 197,-102.332 197,-78.3318 257,-78.3318 257,-102.332"/>
+<text text-anchor="middle" x="227" y="-87.9318" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">menu_css</text>
+</a>
+</g>
+</g>
+<!-- proc~menu_css&#45;&gt;proc~console_menu -->
+<g id="proc~~console_menu~~CalledByGraph_edge14" class="edge"><title>proc~menu_css&#45;&gt;proc~console_menu</title>
+<path fill="none" stroke="black" d="M257.076,-90.3318C266.209,-90.3318 276.566,-90.3318 286.712,-90.3318"/>
+<polygon fill="black" stroke="black" points="286.736,-93.8319 296.736,-90.3318 286.736,-86.8319 286.736,-93.8319"/>
+</g>
+<!-- proc~menu_css&#45;&gt;proc~menu_css -->
+<g id="proc~~console_menu~~CalledByGraph_edge4" class="edge"><title>proc~menu_css&#45;&gt;proc~menu_css</title>
+<path fill="none" stroke="black" d="M210.135,-102.346C204.245,-111.303 209.867,-120.332 227,-120.332 237.44,-120.332 243.606,-116.979 245.497,-112.333"/>
+<polygon fill="black" stroke="black" points="248.932,-111.65 243.865,-102.346 242.024,-112.779 248.932,-111.65"/>
+</g>
+<!-- proc~menu_css&#45;&gt;proc~menu_main -->
+<g id="proc~~console_menu~~CalledByGraph_edge8" class="edge"><title>proc~menu_css&#45;&gt;proc~menu_main</title>
+<path fill="none" stroke="black" d="M196.816,-96.508C187.619,-97.0278 177.26,-97.1944 167.318,-97.008"/>
+<polygon fill="black" stroke="black" points="167.28,-93.5051 157.174,-96.6859 167.058,-100.502 167.28,-93.5051"/>
+</g>
+<!-- proc~menu_post -->
+<g id="proc~~console_menu~~CalledByGraph_node5" class="node"><title>proc~menu_post</title>
+<g id="a_proc~~console_menu~~CalledByGraph_node5"><a xlink:href="../proc/menu_post.html" xlink:title="menu_post">
+<polygon fill="#d9534f" stroke="#d9534f" points="259,-42.3318 195,-42.3318 195,-18.3318 259,-18.3318 259,-42.3318"/>
+<text text-anchor="middle" x="227" y="-27.9318" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">menu_post</text>
+</a>
+</g>
+</g>
+<!-- proc~menu_post&#45;&gt;proc~console_menu -->
+<g id="proc~~console_menu~~CalledByGraph_edge15" class="edge"><title>proc~menu_post&#45;&gt;proc~console_menu</title>
+<path fill="none" stroke="black" d="M249.957,-42.4737C265.987,-51.3382 287.931,-63.4735 305.711,-73.3058"/>
+<polygon fill="black" stroke="black" points="304.131,-76.4315 314.576,-78.208 307.519,-70.3057 304.131,-76.4315"/>
+</g>
+<!-- proc~menu_post&#45;&gt;proc~menu_post -->
+<g id="proc~~console_menu~~CalledByGraph_edge6" class="edge"><title>proc~menu_post&#45;&gt;proc~menu_post</title>
+<path fill="none" stroke="black" d="M210.135,-42.3457C204.245,-51.3035 209.867,-60.3318 227,-60.3318 237.44,-60.3318 243.606,-56.9793 245.497,-52.3331"/>
+<polygon fill="black" stroke="black" points="248.932,-51.6502 243.865,-42.3457 242.024,-52.7793 248.932,-51.6502"/>
+</g>
+<!-- proc~menu_post&#45;&gt;proc~menu_main -->
+<g id="proc~~console_menu~~CalledByGraph_edge9" class="edge"><title>proc~menu_post&#45;&gt;proc~menu_main</title>
+<path fill="none" stroke="black" d="M213.424,-42.3993C201.178,-51.4099 181.908,-63.4604 164.433,-73.3379"/>
+<polygon fill="black" stroke="black" points="162.561,-70.3739 155.505,-78.2776 165.949,-76.4989 162.561,-70.3739"/>
+</g>
+<!-- proc~menu_main&#45;&gt;proc~console_menu -->
+<g id="proc~~console_menu~~CalledByGraph_edge16" class="edge"><title>proc~menu_main&#45;&gt;proc~console_menu</title>
+<path fill="none" stroke="black" d="M130.413,-78.0987C140.322,-59.199 162.26,-23.594 193,-9.33181 220.415,3.38792 233.286,2.72236 261,-9.33181 289.002,-21.5112 311.322,-49.7614 324.23,-69.4499"/>
+<polygon fill="black" stroke="black" points="321.357,-71.456 329.64,-78.0622 327.285,-67.7325 321.357,-71.456"/>
+</g>
+<!-- proc~menu_main&#45;&gt;proc~menu_page -->
+<g id="proc~~console_menu~~CalledByGraph_edge1" class="edge"><title>proc~menu_main&#45;&gt;proc~menu_page</title>
+<path fill="none" stroke="black" d="M155.505,-102.386C171.63,-111.101 190.906,-122.73 205.223,-132.48"/>
+<polygon fill="black" stroke="black" points="203.235,-135.36 213.424,-138.264 207.269,-129.64 203.235,-135.36"/>
+</g>
+<!-- proc~menu_main&#45;&gt;proc~menu_css -->
+<g id="proc~~console_menu~~CalledByGraph_edge3" class="edge"><title>proc~menu_main&#45;&gt;proc~menu_css</title>
+<path fill="none" stroke="black" d="M157.174,-83.9777C166.537,-83.5505 176.844,-83.469 186.567,-83.7333"/>
+<polygon fill="black" stroke="black" points="186.681,-87.2408 196.816,-84.1556 186.969,-80.2467 186.681,-87.2408"/>
+</g>
+<!-- proc~menu_main&#45;&gt;proc~menu_post -->
+<g id="proc~~console_menu~~CalledByGraph_edge5" class="edge"><title>proc~menu_main&#45;&gt;proc~menu_post</title>
+<path fill="none" stroke="black" d="M137.355,-78.0596C149.62,-69.0667 168.746,-57.115 186.097,-47.3089"/>
+<polygon fill="black" stroke="black" points="187.907,-50.3073 194.963,-42.4036 184.518,-44.1823 187.907,-50.3073"/>
+</g>
+<!-- proc~menu_main&#45;&gt;proc~menu_main -->
+<g id="proc~~console_menu~~CalledByGraph_edge7" class="edge"><title>proc~menu_main&#45;&gt;proc~menu_main</title>
+<path fill="none" stroke="black" d="M107.627,-102.346C102.084,-111.303 107.375,-120.332 123.5,-120.332 133.326,-120.332 139.129,-116.979 140.909,-112.333"/>
+<polygon fill="black" stroke="black" points="144.353,-111.697 139.373,-102.346 137.434,-112.762 144.353,-111.697"/>
+</g>
+</g>
+</svg>
+</div>
+                <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+                <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                      </div>
+                      <div class="modal-body">
+                        
+Nodes of different colours represent the following:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="641pt" height="26pt"
+ viewBox="0.00 0.00 641.00 26.18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(0.818124 0.818124) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-28 779.5,-28 779.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node"><title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,-0 54,-0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node"><title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="136,-24 72,-24 72,-0 136,-0 136,-24"/>
+<text text-anchor="middle" x="104" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Type -->
+<g id="node3" class="node"><title>Type</title>
+<polygon fill="#5cb85c" stroke="#5cb85c" points="208,-24 154,-24 154,-0 208,-0 208,-24"/>
+<text text-anchor="middle" x="181" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type</text>
+</g>
+<!-- Subroutine -->
+<g id="node4" class="node"><title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="288,-24 226,-24 226,-0 288,-0 288,-24"/>
+<text text-anchor="middle" x="257" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node5" class="node"><title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="360,-24 306,-24 306,-0 360,-0 360,-24"/>
+<text text-anchor="middle" x="333" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node6" class="node"><title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="433.5,-24 378.5,-24 378.5,-0 433.5,-0 433.5,-24"/>
+<text text-anchor="middle" x="406" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node7" class="node"><title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="588,-24 452,-24 452,-0 588,-0 588,-24"/>
+<text text-anchor="middle" x="520" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node8" class="node"><title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="660,-24 606,-24 606,-0 660,-0 660,-24"/>
+<text text-anchor="middle" x="633" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node9" class="node"><title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="775.5,-24 678.5,-24 678.5,-0 775.5,-0 775.5,-24"/>
+<text text-anchor="middle" x="727" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<h5>Module Graph</h5>
+<p>Solid arrows point from a parent (sub)module to the submodule which is
+descended from it. Dashed arrows point from a module being used to the
+module using it.</p>
+<h5>Type Graph</h5>
+<p>Solid arrows point from one derived type to another which extends
+(inherits from) it. Dashed arrows point from a derived type to another
+type containing it as a components, with a label listing the name(s) of
+said component(s).</p>
+<h5>Call Graph</h5>
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+     
+    <br>
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-keystroke"></span>character(len=1),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>keystroke</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-item"></span>character(len=80),</td>
+  
+  <td>public,</td>
+  <td>dimension(10)</td><td>::</td>
+  <td><strong>item</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-read_items"></span>character(len=len(items)),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>read_items</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-command_status%7E13"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>command_status</strong></td><td> =</td><td>0</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-exit_status%7E13"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>exit_status</strong></td><td> =</td><td>0</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i%7E7"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>i</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ios%7E11"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>ios</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-j%7E4"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>j</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-k%7E2"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>k</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-pos"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>pos</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    <section>
+    <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="highlight"><pre><span></span>  <span class="k">function </span><span class="n">console_menu</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+    <span class="c">!! Auxilary routine for displaying the menus in console mode.</span>
+    <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span> <span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">items</span>
+    <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="n">console_menu</span>
+    <span class="kt">integer</span> <span class="kd">::</span> <span class="n">command_status</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">exit_status</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">ios</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">pos</span>
+    <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">))</span> <span class="kd">::</span> <span class="n">read_items</span>
+    <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">80</span><span class="p">),</span> <span class="k">dimension</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="kd">::</span> <span class="n">item</span>
+    <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>   <span class="kd">::</span> <span class="n">keystroke</span>
+    <span class="c">!</span>
+    <span class="n">read_items</span> <span class="o">=</span> <span class="n">items</span>
+    <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">do </span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span>
+       <span class="n">pos</span> <span class="o">=</span> <span class="nb">index</span><span class="p">(</span><span class="n">string</span> <span class="o">=</span> <span class="n">read_items</span><span class="p">(:),</span> <span class="n">substring</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>
+       <span class="k">if</span> <span class="p">((</span><span class="n">pos</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="nb">len_trim</span><span class="p">(</span><span class="n">read_items</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">))</span> <span class="k">exit</span>
+<span class="k">       if</span> <span class="p">((</span><span class="n">pos</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">read_items</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">))</span> <span class="k">then</span>
+<span class="k">          </span><span class="n">item</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">read_items</span>
+          <span class="k">exit</span>
+<span class="k">       end if</span>
+<span class="k">       </span><span class="n">item</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">read_items</span><span class="p">(:</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+       <span class="n">read_items</span> <span class="o">=</span> <span class="n">read_items</span><span class="p">(</span><span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">:)</span>
+       <span class="n">j</span> <span class="o">=</span>  <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">end do</span>
+<span class="k">    write</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="o">*</span><span class="p">,</span> <span class="n">fmt</span> <span class="o">=</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">advance</span> <span class="o">=</span> <span class="s1">&#39;no&#39;</span><span class="p">)</span> <span class="n">set_bold</span>
+    <span class="k">do </span><span class="n">k</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j</span>
+       <span class="k">print</span> <span class="s1">&#39;(2x,i1,a)&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;  &quot;</span> <span class="o">//</span> <span class="nb">trim</span><span class="p">(</span><span class="n">item</span><span class="p">(</span><span class="n">k</span><span class="p">))</span>
+    <span class="k">end do</span>
+<span class="k">    print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">ga</span>
+    <span class="k">call </span><span class="nb">execute_command_line</span><span class="p">(</span><span class="n">command</span> <span class="o">=</span> <span class="s1">&#39;stty raw&#39;</span><span class="p">,</span> <span class="n">exitstat</span> <span class="o">=</span> <span class="n">exit_status</span><span class="p">,</span> <span class="n">cmdstat</span> <span class="o">=</span> <span class="n">command_status</span><span class="p">,</span> <span class="n">cmdmsg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">exit_status</span> <span class="o">/=</span> <span class="mi">0</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">command_status</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1231</span><span class="p">,</span> <span class="n">cmd_msg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+    <span class="k">write</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="o">*</span><span class="p">,</span> <span class="n">fmt</span> <span class="o">=</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">advance</span> <span class="o">=</span> <span class="s1">&#39;no&#39;</span><span class="p">)</span> <span class="n">set_blue</span>
+    <span class="k">read</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="o">*</span><span class="p">,</span> <span class="n">fmt</span> <span class="o">=</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">advance</span> <span class="o">=</span> <span class="s1">&#39;no&#39;</span><span class="p">,</span> <span class="n">iostat</span>  <span class="o">=</span> <span class="n">ios</span><span class="p">)</span> <span class="n">keystroke</span>
+    <span class="k">write</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="o">*</span><span class="p">,</span> <span class="n">fmt</span> <span class="o">=</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">advance</span> <span class="o">=</span> <span class="s1">&#39;no&#39;</span><span class="p">)</span> <span class="n">reset</span>
+    <span class="k">call </span><span class="nb">execute_command_line</span><span class="p">(</span><span class="n">command</span> <span class="o">=</span> <span class="s1">&#39;stty &#39;</span> <span class="o">//</span> <span class="nb">trim</span><span class="p">(</span><span class="n">terminal_settings</span><span class="p">),</span> <span class="n">exitstat</span> <span class="o">=</span> <span class="n">exit_status</span><span class="p">,</span> <span class="n">cmdstat</span> <span class="o">=</span> <span class="n">command_status</span><span class="p">,&amp;</span>
+         <span class="p">&amp;</span> <span class="n">cmdmsg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">exit_status</span> <span class="o">/=</span> <span class="mi">0</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">command_status</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1232</span><span class="p">,</span> <span class="n">cmd_msg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+    <span class="k">print</span> <span class="o">*</span>
+    <span class="n">console_menu</span> <span class="o">=</span> <span class="n">keystroke</span>
+  <span class="k">end function </span><span class="n">console_menu</span>
+</pre></div>
+
+    </section>
+    <br>
+    
+    
+    </div>
+  </div>
+
+    <hr>
+    <footer>
+        <div class="row">
+        <div class="col-md-4">&copy; 2016 <a rel="license" href="http://www.gnu.org/licenses/old-licenses/fdl-1.2.en.html">GNU Free Documentation License</a></div>
+	<div class="col-md-4"><span class="text-center"> fBlog was developed by Denis BERNARD</span></div>
+        <div class="col-md-4"><span class="pull-right">Documentation generated by <a href="https://github.com/cmacmackin/ford">FORD</a></span></div>
+        </div>
+        <br>
+    </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js'],
+        'HTML-CSS': { 
+           styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: '#000000 ! important'} }
+        }
+      });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>

@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	 <meta name="description" content="Stand-alone static site generator for Linux console">
+    
+    <meta name="author" content="Chris MacMackin" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>i18n &ndash; fBlog</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">fBlog </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+				
+                
+            <li><a href="../lists/files.html">Source Files</a></li>
+				
+				
+            <li><a href="../lists/modules.html">Modules</a></li>
+				
+				
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+				
+								
+            <li><a href="../lists/types.html">Derived Types</a></li>
+				
+				
+            <li><a href="../program/fblog.html">Program</a></li>
+				
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>i18n
+    <small>Function</small>
+    
+    </h1>
+	 
+<div class="row">
+<div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+    <li><i class="fa fa-code"></i><a href="../src/mod_fblog.f08"> Source File</a></li>
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+     <li><a href='../sourcefile/mod_fblog.f08.html'>mod_fblog.f08</a></li>
+  
+     <li><a href='../module/fblog_m.html'>fblog_m</a></li>
+  
+     <li class="active">i18n</li>
+  </ol>
+</div>
+</div>
+</div>
+    
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-3">
+    
+<div id="sidebar">
+  
+  
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars">Variables</a></h3></div>
+    <div id="vars" class="panel-collapse collapse">
+      <div class="list-group">
+        
+        <a class="list-group-item" href="../proc/i18n.html#variable-lang">lang</a>
+        
+        <a class="list-group-item" href="../proc/i18n.html#variable-msgstr">msgstr</a>
+        
+        <a class="list-group-item" href="../proc/i18n.html#variable-l">l</a>
+        
+        <a class="list-group-item" href="../proc/i18n.html#variable-stat">stat</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+    <div class="list-group">
+      <a class="list-group-item" href="../proc/i18n.html#src">i18n</a>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#allprocs">All Procedures</a></h3></div>
+    <div id="allprocs" class="panel-collapse collapse">
+        <div class="list-group">
+          
+          <a class="list-group-item" href="../proc/add_post.html">add_post</a>
+          
+          <a class="list-group-item" href="../proc/clock.html">clock</a>
+          
+          <a class="list-group-item" href="../proc/config.html">config</a>
+          
+          <a class="list-group-item" href="../proc/console.html">console</a>
+          
+          <a class="list-group-item" href="../proc/console_menu.html">console_menu</a>
+          
+          <a class="list-group-item" href="../proc/create_blog.html">create_blog</a>
+          
+          <a class="list-group-item" href="../proc/delete_css.html">delete_css</a>
+          
+          <a class="list-group-item" href="../proc/delete_page.html">delete_page</a>
+          
+          <a class="list-group-item" href="../proc/delete_post.html">delete_post</a>
+          
+          <a class="list-group-item" href="../proc/edit_css.html">edit_css</a>
+          
+          <a class="list-group-item" href="../proc/edit_page.html">edit_page</a>
+          
+          <a class="list-group-item" href="../proc/edit_post.html">edit_post</a>
+          
+          <a class="list-group-item" href="../proc/html_home.html">html_home</a>
+          
+          <a class="list-group-item" href="../proc/html_month_archive.html">html_month_archive</a>
+          
+          <a class="list-group-item" href="../proc/html_page.html">html_page</a>
+          
+          <a class="list-group-item" href="../proc/html_permalink.html">html_permalink</a>
+          
+          <a class="list-group-item" href="../proc/html_year_archive.html">html_year_archive</a>
+          
+          <a class="list-group-item" href="../proc/i18n.html">i18n</a>
+          
+          <a class="list-group-item" href="../proc/init_conf.html">init_conf</a>
+          
+          <a class="list-group-item" href="../proc/init_data.html">init_data</a>
+          
+          <a class="list-group-item" href="../proc/list_css.html">list_css</a>
+          
+          <a class="list-group-item" href="../proc/list_pages.html">list_pages</a>
+          
+          <a class="list-group-item" href="../proc/list_posts.html">list_posts</a>
+          
+          <a class="list-group-item" href="../proc/menu_css.html">menu_css</a>
+          
+          <a class="list-group-item" href="../proc/menu_main.html">menu_main</a>
+          
+          <a class="list-group-item" href="../proc/menu_page.html">menu_page</a>
+          
+          <a class="list-group-item" href="../proc/menu_post.html">menu_post</a>
+          
+          <a class="list-group-item" href="../proc/terminate.html">terminate</a>
+          
+          <a class="list-group-item" href="../proc/update.html">update</a>
+          
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+    </div>
+    
+    <div class="col-lg-9" id='text'>
+    <h2>
+public function i18n(msg)
+    
+    
+    
+</h2>
+    
+  
+
+
+
+    <h3>Arguments</h3>
+    
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-msg"></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>msg</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    
+    
+    
+    
+    
+    
+    
+	 <h3>Return Value <small><span class="anchor" id="variable-i18n"></span>character(len=:),
+  allocatable</small></h3>
+    
+    
+    
+    <h3>Description</h3>
+    <p>Provide sentences in the language according the LANG environment variable.</p>
+    
+    
+     
+     <h3>Called By</h3>
+     
+                <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: proc~~i18n~~CalledByGraph Pages: 1 -->
+<svg id="proci18nCalledByGraph" width="389pt" height="355pt"
+ viewBox="0.00 0.00 389.00 355.11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~i18n~~CalledByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 351.106)">
+<title>proc~~i18n~~CalledByGraph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-351.106 385,-351.106 385,4 -4,4"/>
+<!-- proc~i18n -->
+<g id="proc~~i18n~~CalledByGraph_node1" class="node"><title>proc~i18n</title>
+<polygon fill="none" stroke="black" points="381,-314 327,-314 327,-290 381,-290 381,-314"/>
+<text text-anchor="middle" x="354" y="-299.6" font-family="Helvetica,sans-Serif" font-size="10.50">i18n</text>
+</g>
+<!-- proc~terminate -->
+<g id="proc~~i18n~~CalledByGraph_node2" class="node"><title>proc~terminate</title>
+<g id="a_proc~~i18n~~CalledByGraph_node2"><a xlink:href="../proc/terminate.html" xlink:title="terminate">
+<polygon fill="#d9534f" stroke="#d9534f" points="291,-192 234,-192 234,-168 291,-168 291,-192"/>
+<text text-anchor="middle" x="262.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">terminate</text>
+</a>
+</g>
+</g>
+<!-- proc~terminate&#45;&gt;proc~i18n -->
+<g id="proc~~i18n~~CalledByGraph_edge16" class="edge"><title>proc~terminate&#45;&gt;proc~i18n</title>
+<path fill="none" stroke="black" d="M272.409,-192.144C287.755,-213.062 319.329,-256.102 338.078,-281.659"/>
+<polygon fill="black" stroke="black" points="335.39,-283.913 344.127,-289.905 341.034,-279.772 335.39,-283.913"/>
+</g>
+<!-- proc~update -->
+<g id="proc~~i18n~~CalledByGraph_node3" class="node"><title>proc~update</title>
+<g id="a_proc~~i18n~~CalledByGraph_node3"><a xlink:href="../proc/update.html" xlink:title="update">
+<polygon fill="#d9534f" stroke="#d9534f" points="54,-192 0,-192 0,-168 54,-168 54,-192"/>
+<text text-anchor="middle" x="27" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">update</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~i18n -->
+<g id="proc~~i18n~~CalledByGraph_edge17" class="edge"><title>proc~update&#45;&gt;proc~i18n</title>
+<path fill="none" stroke="black" d="M29.0126,-192.4C32.1197,-221.312 44.3043,-293.006 90,-323 159.755,-368.786 263.404,-338.779 317.392,-317.66"/>
+<polygon fill="black" stroke="black" points="318.908,-320.823 326.876,-313.841 316.292,-314.33 318.908,-320.823"/>
+</g>
+<!-- proc~update&#45;&gt;proc~terminate -->
+<g id="proc~~i18n~~CalledByGraph_edge7" class="edge"><title>proc~update&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M35.428,-192.075C45.5803,-207.286 65.3721,-232.683 90,-243 134.272,-261.546 153.618,-261.281 198,-243 218.886,-234.397 236.537,-215.232 247.887,-200.285"/>
+<polygon fill="black" stroke="black" points="250.795,-202.237 253.819,-192.083 245.123,-198.135 250.795,-202.237"/>
+</g>
+<!-- proc~init_data -->
+<g id="proc~~i18n~~CalledByGraph_node4" class="node"><title>proc~init_data</title>
+<g id="a_proc~~i18n~~CalledByGraph_node4"><a xlink:href="../proc/init_data.html" xlink:title="init_data">
+<polygon fill="#d9534f" stroke="#d9534f" points="171,-314 117,-314 117,-290 171,-290 171,-314"/>
+<text text-anchor="middle" x="144" y="-299.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">init_data</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~init_data -->
+<g id="proc~~i18n~~CalledByGraph_edge15" class="edge"><title>proc~update&#45;&gt;proc~init_data</title>
+<path fill="none" stroke="black" d="M33.1855,-192.108C42.1879,-211.913 62.4201,-251.481 90,-276 95.1978,-280.621 101.364,-284.619 107.62,-288"/>
+<polygon fill="black" stroke="black" points="106.232,-291.218 116.748,-292.512 109.334,-284.943 106.232,-291.218"/>
+</g>
+<!-- proc~html_home -->
+<g id="proc~~i18n~~CalledByGraph_node5" class="node"><title>proc~html_home</title>
+<g id="a_proc~~i18n~~CalledByGraph_node5"><a xlink:href="../proc/html_home.html" xlink:title="html_home">
+<polygon fill="#d9534f" stroke="#d9534f" points="176,-234 112,-234 112,-210 176,-210 176,-234"/>
+<text text-anchor="middle" x="144" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">html_home</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~html_home -->
+<g id="proc~~i18n~~CalledByGraph_edge1" class="edge"><title>proc~update&#45;&gt;proc~html_home</title>
+<path fill="none" stroke="black" d="M54.0953,-189.53C68.2541,-194.701 86.0777,-201.211 102.042,-207.041"/>
+<polygon fill="black" stroke="black" points="101.098,-210.423 111.692,-210.566 103.5,-203.848 101.098,-210.423"/>
+</g>
+<!-- proc~html_year_archive -->
+<g id="proc~~i18n~~CalledByGraph_node6" class="node"><title>proc~html_year_archive</title>
+<g id="a_proc~~i18n~~CalledByGraph_node6"><a xlink:href="../proc/html_year_archive.html" xlink:title="html_year_archive">
+<polygon fill="#d9534f" stroke="#d9534f" points="194,-192 94,-192 94,-168 194,-168 194,-192"/>
+<text text-anchor="middle" x="144" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">html_year_archive</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~html_year_archive -->
+<g id="proc~~i18n~~CalledByGraph_edge2" class="edge"><title>proc~update&#45;&gt;proc~html_year_archive</title>
+<path fill="none" stroke="black" d="M54.0953,-180C63.0344,-180 73.4342,-180 83.9046,-180"/>
+<polygon fill="black" stroke="black" points="83.9196,-183.5 93.9195,-180 83.9195,-176.5 83.9196,-183.5"/>
+</g>
+<!-- proc~html_page -->
+<g id="proc~~i18n~~CalledByGraph_node7" class="node"><title>proc~html_page</title>
+<g id="a_proc~~i18n~~CalledByGraph_node7"><a xlink:href="../proc/html_page.html" xlink:title="html_page">
+<polygon fill="#d9534f" stroke="#d9534f" points="175,-150 113,-150 113,-126 175,-126 175,-150"/>
+<text text-anchor="middle" x="144" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">html_page</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~html_page -->
+<g id="proc~~i18n~~CalledByGraph_edge3" class="edge"><title>proc~update&#45;&gt;proc~html_page</title>
+<path fill="none" stroke="black" d="M54.0953,-170.47C68.5834,-165.178 86.9086,-158.486 103.152,-152.553"/>
+<polygon fill="black" stroke="black" points="104.752,-155.695 112.945,-148.977 102.351,-149.12 104.752,-155.695"/>
+</g>
+<!-- proc~init_conf -->
+<g id="proc~~i18n~~CalledByGraph_node8" class="node"><title>proc~init_conf</title>
+<g id="a_proc~~i18n~~CalledByGraph_node8"><a xlink:href="../proc/init_conf.html" xlink:title="init_conf">
+<polygon fill="#d9534f" stroke="#d9534f" points="171,-108 117,-108 117,-84 171,-84 171,-108"/>
+<text text-anchor="middle" x="144" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">init_conf</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~init_conf -->
+<g id="proc~~i18n~~CalledByGraph_edge4" class="edge"><title>proc~update&#45;&gt;proc~init_conf</title>
+<path fill="none" stroke="black" d="M37.324,-167.834C48.5251,-153.924 68.5109,-131.243 90,-117 95.3598,-113.448 101.413,-110.346 107.462,-107.694"/>
+<polygon fill="black" stroke="black" points="108.901,-110.888 116.864,-103.899 106.281,-104.397 108.901,-110.888"/>
+</g>
+<!-- proc~html_permalink -->
+<g id="proc~~i18n~~CalledByGraph_node9" class="node"><title>proc~html_permalink</title>
+<g id="a_proc~~i18n~~CalledByGraph_node9"><a xlink:href="../proc/html_permalink.html" xlink:title="html_permalink">
+<polygon fill="#d9534f" stroke="#d9534f" points="186,-66 102,-66 102,-42 186,-42 186,-66"/>
+<text text-anchor="middle" x="144" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">html_permalink</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~html_permalink -->
+<g id="proc~~i18n~~CalledByGraph_edge5" class="edge"><title>proc~update&#45;&gt;proc~html_permalink</title>
+<path fill="none" stroke="black" d="M32.1417,-167.873C40.0834,-146.315 59.4267,-101.137 90,-75 91.5234,-73.6976 93.1374,-72.4699 94.8182,-71.3132"/>
+<polygon fill="black" stroke="black" points="96.8254,-74.1931 103.668,-66.1041 93.2744,-68.1606 96.8254,-74.1931"/>
+</g>
+<!-- proc~html_month_archive -->
+<g id="proc~~i18n~~CalledByGraph_node10" class="node"><title>proc~html_month_archive</title>
+<g id="a_proc~~i18n~~CalledByGraph_node10"><a xlink:href="../proc/html_month_archive.html" xlink:title="html_month_archive">
+<polygon fill="#d9534f" stroke="#d9534f" points="198,-24 90,-24 90,-0 198,-0 198,-24"/>
+<text text-anchor="middle" x="144" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">html_month_archive</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~html_month_archive -->
+<g id="proc~~i18n~~CalledByGraph_edge6" class="edge"><title>proc~update&#45;&gt;proc~html_month_archive</title>
+<path fill="none" stroke="black" d="M29.8451,-167.951C34.6794,-140.35 50.2051,-71.9336 90,-33 91.2403,-31.7866 92.5592,-30.6409 93.9403,-29.5593"/>
+<polygon fill="black" stroke="black" points="95.9439,-32.4313 102.413,-24.0409 92.1237,-26.5656 95.9439,-32.4313"/>
+</g>
+<!-- proc~init_data&#45;&gt;proc~i18n -->
+<g id="proc~~i18n~~CalledByGraph_edge18" class="edge"><title>proc~init_data&#45;&gt;proc~i18n</title>
+<path fill="none" stroke="black" d="M171.343,-302C208.149,-302 275.103,-302 316.638,-302"/>
+<polygon fill="black" stroke="black" points="316.871,-305.5 326.871,-302 316.871,-298.5 316.871,-305.5"/>
+</g>
+<!-- proc~init_data&#45;&gt;proc~terminate -->
+<g id="proc~~i18n~~CalledByGraph_edge12" class="edge"><title>proc~init_data&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M171.211,-292.465C180.337,-288.324 190.226,-282.835 198,-276 222.097,-254.813 240.947,-222.436 251.652,-201.242"/>
+<polygon fill="black" stroke="black" points="254.872,-202.625 256.114,-192.103 248.582,-199.554 254.872,-202.625"/>
+</g>
+<!-- proc~html_home&#45;&gt;proc~terminate -->
+<g id="proc~~i18n~~CalledByGraph_edge8" class="edge"><title>proc~html_home&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M176.22,-210.745C190.927,-205.443 208.587,-199.076 224.013,-193.515"/>
+<polygon fill="black" stroke="black" points="225.553,-196.68 233.773,-189.996 223.179,-190.095 225.553,-196.68"/>
+</g>
+<!-- proc~html_year_archive&#45;&gt;proc~terminate -->
+<g id="proc~~i18n~~CalledByGraph_edge9" class="edge"><title>proc~html_year_archive&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M194.069,-180C203.918,-180 214.127,-180 223.53,-180"/>
+<polygon fill="black" stroke="black" points="223.742,-183.5 233.742,-180 223.742,-176.5 223.742,-183.5"/>
+</g>
+<!-- proc~html_page&#45;&gt;proc~terminate -->
+<g id="proc~~i18n~~CalledByGraph_edge10" class="edge"><title>proc~html_page&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M175.002,-148.816C190.076,-154.251 208.48,-160.886 224.432,-166.636"/>
+<polygon fill="black" stroke="black" points="223.401,-169.985 233.995,-170.084 225.775,-163.4 223.401,-169.985"/>
+</g>
+<!-- proc~init_conf&#45;&gt;proc~terminate -->
+<g id="proc~~i18n~~CalledByGraph_edge11" class="edge"><title>proc~init_conf&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M171.1,-103.954C180.017,-107.28 189.801,-111.636 198,-117 216.08,-128.828 233.263,-146.407 245.184,-159.993"/>
+<polygon fill="black" stroke="black" points="242.734,-162.513 251.888,-167.848 248.059,-157.97 242.734,-162.513"/>
+</g>
+<!-- proc~html_permalink&#45;&gt;proc~terminate -->
+<g id="proc~~i18n~~CalledByGraph_edge13" class="edge"><title>proc~html_permalink&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M184.026,-66.0071C189.027,-68.5104 193.844,-71.4846 198,-75 224.921,-97.7701 243.574,-134.986 253.397,-158.451"/>
+<polygon fill="black" stroke="black" points="250.206,-159.895 257.177,-167.874 256.702,-157.289 250.206,-159.895"/>
+</g>
+<!-- proc~html_month_archive&#45;&gt;proc~terminate -->
+<g id="proc~~i18n~~CalledByGraph_edge14" class="edge"><title>proc~html_month_archive&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M185.557,-24.071C190.094,-26.5381 194.377,-29.4856 198,-33 233.88,-67.8013 250.683,-126.231 257.508,-157.932"/>
+<polygon fill="black" stroke="black" points="254.119,-158.833 259.521,-167.947 260.982,-157.454 254.119,-158.833"/>
+</g>
+</g>
+</svg>
+</div>
+                <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+                <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                      </div>
+                      <div class="modal-body">
+                        
+Nodes of different colours represent the following:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="641pt" height="26pt"
+ viewBox="0.00 0.00 641.00 26.18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(0.818124 0.818124) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-28 779.5,-28 779.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node"><title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,-0 54,-0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node"><title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="136,-24 72,-24 72,-0 136,-0 136,-24"/>
+<text text-anchor="middle" x="104" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Type -->
+<g id="node3" class="node"><title>Type</title>
+<polygon fill="#5cb85c" stroke="#5cb85c" points="208,-24 154,-24 154,-0 208,-0 208,-24"/>
+<text text-anchor="middle" x="181" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type</text>
+</g>
+<!-- Subroutine -->
+<g id="node4" class="node"><title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="288,-24 226,-24 226,-0 288,-0 288,-24"/>
+<text text-anchor="middle" x="257" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node5" class="node"><title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="360,-24 306,-24 306,-0 360,-0 360,-24"/>
+<text text-anchor="middle" x="333" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node6" class="node"><title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="433.5,-24 378.5,-24 378.5,-0 433.5,-0 433.5,-24"/>
+<text text-anchor="middle" x="406" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node7" class="node"><title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="588,-24 452,-24 452,-0 588,-0 588,-24"/>
+<text text-anchor="middle" x="520" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node8" class="node"><title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="660,-24 606,-24 606,-0 660,-0 660,-24"/>
+<text text-anchor="middle" x="633" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node9" class="node"><title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="775.5,-24 678.5,-24 678.5,-0 775.5,-0 775.5,-24"/>
+<text text-anchor="middle" x="727" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<h5>Module Graph</h5>
+<p>Solid arrows point from a parent (sub)module to the submodule which is
+descended from it. Dashed arrows point from a module being used to the
+module using it.</p>
+<h5>Type Graph</h5>
+<p>Solid arrows point from one derived type to another which extends
+(inherits from) it. Dashed arrows point from a derived type to another
+type containing it as a components, with a label listing the name(s) of
+said component(s).</p>
+<h5>Call Graph</h5>
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+     
+    <br>
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-lang"></span>character(len=2),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>lang</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-msgstr"></span>character(len=256),</td>
+  
+  <td>public,</td>
+  <td>dimension(en:fr, 0:wrong_entry)</td><td>::</td>
+  <td><strong>msgstr</strong></td><td> =</td><td>""</td><td><p>Internationalization of messages according setting of LANG (English, French...)</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-l"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>l</strong></td><td> =</td><td>0</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-stat"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    <section>
+    <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="highlight"><pre><span></span>  <span class="k">function </span><span class="n">i18n</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+    <span class="c">!! Provide sentences in the language according the LANG environment variable.</span>
+    <span class="kt">integer</span><span class="p">,</span> <span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">msg</span>
+    <span class="kt">character</span><span class="p">(:),</span> <span class="k">allocatable</span> <span class="kd">::</span> <span class="n">i18n</span>
+    <span class="kt">integer</span> <span class="kd">::</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">stat</span>
+<span class="nb">    </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="n">lang</span>
+    <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">256</span><span class="p">),</span> <span class="k">dimension</span><span class="p">(</span><span class="n">en</span><span class="p">:</span><span class="n">fr</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="n">wrong_entry</span><span class="p">)</span> <span class="kd">::</span> <span class="n">msgstr</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="c">!</span>
+    <span class="k">include</span> <span class="s1">&#39;i18n.inc&#39;</span>
+    <span class="c">!</span>
+    <span class="k">call </span><span class="nb">get_environment_variable</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;LANG&quot;</span><span class="p">,</span> <span class="k">value</span> <span class="o">=</span> <span class="n">lang</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="nb">stat</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">lang</span> <span class="o">==</span> <span class="s2">&quot;en&quot;</span><span class="p">)</span> <span class="n">l</span> <span class="o">=</span> <span class="n">en</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">lang</span> <span class="o">==</span> <span class="s2">&quot;fr&quot;</span><span class="p">)</span> <span class="n">l</span> <span class="o">=</span> <span class="n">fr</span>
+    <span class="n">str_i18n</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">msgstr</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">msg</span><span class="p">))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">str_i18n</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="n">str_i18n</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">msgstr</span><span class="p">(</span><span class="n">en</span><span class="p">,</span><span class="n">msg</span><span class="p">))</span>
+    <span class="n">i18n</span> <span class="o">=</span> <span class="n">str_i18n</span>
+    <span class="k">deallocate</span><span class="p">(</span><span class="n">str_i18n</span><span class="p">)</span>
+  <span class="k">end function </span><span class="n">i18n</span>
+</pre></div>
+
+    </section>
+    <br>
+    
+    
+    </div>
+  </div>
+
+    <hr>
+    <footer>
+        <div class="row">
+        <div class="col-md-4">&copy; 2016 <a rel="license" href="http://www.gnu.org/licenses/old-licenses/fdl-1.2.en.html">GNU Free Documentation License</a></div>
+	<div class="col-md-4"><span class="text-center"> fBlog was developed by Denis BERNARD</span></div>
+        <div class="col-md-4"><span class="pull-right">Documentation generated by <a href="https://github.com/cmacmackin/ford">FORD</a></span></div>
+        </div>
+        <br>
+    </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js'],
+        'HTML-CSS': { 
+           styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: '#000000 ! important'} }
+        }
+      });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>

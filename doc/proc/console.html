@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	 <meta name="description" content="Stand-alone static site generator for Linux console">
+    
+    <meta name="author" content="Chris MacMackin" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>console &ndash; fBlog</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">fBlog </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+				
+                
+            <li><a href="../lists/files.html">Source Files</a></li>
+				
+				
+            <li><a href="../lists/modules.html">Modules</a></li>
+				
+				
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+				
+								
+            <li><a href="../lists/types.html">Derived Types</a></li>
+				
+				
+            <li><a href="../program/fblog.html">Program</a></li>
+				
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>console
+    <small>Subroutine</small>
+    
+    </h1>
+	 
+<div class="row">
+<div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+    <li><i class="fa fa-code"></i><a href="../src/mod_tty.f08"> Source File</a></li>
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+     <li><a href='../sourcefile/mod_tty.f08.html'>mod_tty.f08</a></li>
+  
+     <li><a href='../module/tty_m.html'>tty_m</a></li>
+  
+     <li class="active">console</li>
+  </ol>
+</div>
+</div>
+</div>
+    
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-3">
+    
+<div id="sidebar">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+    <div class="list-group">
+      <a class="list-group-item" href="../proc/console.html#src">console</a>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#allprocs">All Procedures</a></h3></div>
+    <div id="allprocs" class="panel-collapse collapse">
+        <div class="list-group">
+          
+          <a class="list-group-item" href="../proc/add_post.html">add_post</a>
+          
+          <a class="list-group-item" href="../proc/clock.html">clock</a>
+          
+          <a class="list-group-item" href="../proc/config.html">config</a>
+          
+          <a class="list-group-item" href="../proc/console.html">console</a>
+          
+          <a class="list-group-item" href="../proc/console_menu.html">console_menu</a>
+          
+          <a class="list-group-item" href="../proc/create_blog.html">create_blog</a>
+          
+          <a class="list-group-item" href="../proc/delete_css.html">delete_css</a>
+          
+          <a class="list-group-item" href="../proc/delete_page.html">delete_page</a>
+          
+          <a class="list-group-item" href="../proc/delete_post.html">delete_post</a>
+          
+          <a class="list-group-item" href="../proc/edit_css.html">edit_css</a>
+          
+          <a class="list-group-item" href="../proc/edit_page.html">edit_page</a>
+          
+          <a class="list-group-item" href="../proc/edit_post.html">edit_post</a>
+          
+          <a class="list-group-item" href="../proc/html_home.html">html_home</a>
+          
+          <a class="list-group-item" href="../proc/html_month_archive.html">html_month_archive</a>
+          
+          <a class="list-group-item" href="../proc/html_page.html">html_page</a>
+          
+          <a class="list-group-item" href="../proc/html_permalink.html">html_permalink</a>
+          
+          <a class="list-group-item" href="../proc/html_year_archive.html">html_year_archive</a>
+          
+          <a class="list-group-item" href="../proc/i18n.html">i18n</a>
+          
+          <a class="list-group-item" href="../proc/init_conf.html">init_conf</a>
+          
+          <a class="list-group-item" href="../proc/init_data.html">init_data</a>
+          
+          <a class="list-group-item" href="../proc/list_css.html">list_css</a>
+          
+          <a class="list-group-item" href="../proc/list_pages.html">list_pages</a>
+          
+          <a class="list-group-item" href="../proc/list_posts.html">list_posts</a>
+          
+          <a class="list-group-item" href="../proc/menu_css.html">menu_css</a>
+          
+          <a class="list-group-item" href="../proc/menu_main.html">menu_main</a>
+          
+          <a class="list-group-item" href="../proc/menu_page.html">menu_page</a>
+          
+          <a class="list-group-item" href="../proc/menu_post.html">menu_post</a>
+          
+          <a class="list-group-item" href="../proc/terminate.html">terminate</a>
+          
+          <a class="list-group-item" href="../proc/update.html">update</a>
+          
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+    </div>
+    
+    <div class="col-lg-9" id='text'>
+    <h2>
+public subroutine console()
+    
+    
+    
+</h2>
+    
+  
+    <ul class="list-inline">
+      <li><h4>Uses:</h4></li>
+      
+      <li><a href="https://software.intel.com/en-us/node/511041">iso_fortran_env</a></li>
+      
+    </ul>
+  
+
+
+
+    <h3>Arguments</h3>
+    
+      <em>None</em>
+    
+    
+    
+    <h3>Description</h3>
+    <p>Head routine for console mode.</p>
+    
+    
+     <h3>Calls</h3>
+     
+                <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: proc~~console~~CallsGraph Pages: 1 -->
+<svg id="procconsoleCallsGraph" width="480pt" height="753pt"
+ viewBox="0.00 0.00 480.00 752.58" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~console~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 748.579)">
+<title>proc~~console~~CallsGraph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-748.579 476,-748.579 476,4 -4,4"/>
+<!-- proc~console -->
+<g id="proc~~console~~CallsGraph_node1" class="node"><title>proc~console</title>
+<polygon fill="none" stroke="black" points="54,-190 0,-190 0,-166 54,-166 54,-190"/>
+<text text-anchor="middle" x="27" y="-175.6" font-family="Helvetica,sans-Serif" font-size="10.50">console</text>
+</g>
+<!-- i18n -->
+<g id="proc~~console~~CallsGraph_node2" class="node"><title>i18n</title>
+<polygon fill="#777777" stroke="#777777" points="365.5,-310 311.5,-310 311.5,-286 365.5,-286 365.5,-310"/>
+<text text-anchor="middle" x="338.5" y="-295.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">i18n</text>
+</g>
+<!-- proc~console&#45;&gt;i18n -->
+<g id="proc~~console~~CallsGraph_edge37" class="edge"><title>proc~console&#45;&gt;i18n</title>
+<path fill="none" stroke="black" d="M54.1407,-188.303C86.8257,-201.17 144.505,-223.825 194,-243 230.609,-257.183 272.545,-273.233 301.587,-284.318"/>
+<polygon fill="black" stroke="black" points="300.702,-287.726 311.293,-288.02 303.197,-281.186 300.702,-287.726"/>
+</g>
+<!-- init_conf -->
+<g id="proc~~console~~CallsGraph_node3" class="node"><title>init_conf</title>
+<polygon fill="#777777" stroke="#777777" points="151,-66 97,-66 97,-42 151,-42 151,-66"/>
+<text text-anchor="middle" x="124" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">init_conf</text>
+</g>
+<!-- proc~console&#45;&gt;init_conf -->
+<g id="proc~~console~~CallsGraph_edge38" class="edge"><title>proc~console&#45;&gt;init_conf</title>
+<path fill="none" stroke="black" d="M33.9059,-165.95C43.786,-146.522 65.0569,-107.66 90,-80 92.2469,-77.5083 94.7518,-75.0726 97.3494,-72.7533"/>
+<polygon fill="black" stroke="black" points="99.787,-75.2789 105.255,-66.2043 95.3215,-69.8882 99.787,-75.2789"/>
+</g>
+<!-- create_blog -->
+<g id="proc~~console~~CallsGraph_node4" class="node"><title>create_blog</title>
+<polygon fill="#777777" stroke="#777777" points="158,-24 90,-24 90,-0 158,-0 158,-24"/>
+<text text-anchor="middle" x="124" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">create_blog</text>
+</g>
+<!-- proc~console&#45;&gt;create_blog -->
+<g id="proc~~console~~CallsGraph_edge39" class="edge"><title>proc~console&#45;&gt;create_blog</title>
+<path fill="none" stroke="black" d="M30.607,-165.812C36.8305,-139.111 54.7322,-74.5278 90,-33 90.7033,-32.1718 91.4477,-31.3651 92.2251,-30.5805"/>
+<polygon fill="black" stroke="black" points="94.4992,-33.2413 99.9038,-24.1286 89.996,-27.8819 94.4992,-33.2413"/>
+</g>
+<!-- proc~menu_main -->
+<g id="proc~~console~~CallsGraph_node5" class="node"><title>proc~menu_main</title>
+<g id="a_proc~~console~~CallsGraph_node5"><a xlink:href="../proc/menu_main.html" xlink:title="menu_main">
+<polygon fill="#d9534f" stroke="#d9534f" points="157.5,-394 90.5,-394 90.5,-370 157.5,-370 157.5,-394"/>
+<text text-anchor="middle" x="124" y="-379.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">menu_main</text>
+</a>
+</g>
+</g>
+<!-- proc~console&#45;&gt;proc~menu_main -->
+<g id="proc~~console~~CallsGraph_edge40" class="edge"><title>proc~console&#45;&gt;proc~menu_main</title>
+<path fill="none" stroke="black" d="M33.6582,-190.15C49.3008,-223.741 93.2799,-318.18 113.098,-360.737"/>
+<polygon fill="black" stroke="black" points="109.977,-362.326 117.371,-369.913 116.323,-359.371 109.977,-362.326"/>
+</g>
+<!-- terminate -->
+<g id="proc~~console~~CallsGraph_node6" class="node"><title>terminate</title>
+<polygon fill="#777777" stroke="#777777" points="472,-496 415,-496 415,-472 472,-472 472,-496"/>
+<text text-anchor="middle" x="443.5" y="-481.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">terminate</text>
+</g>
+<!-- proc~console&#45;&gt;terminate -->
+<g id="proc~~console~~CallsGraph_edge41" class="edge"><title>proc~console&#45;&gt;terminate</title>
+<path fill="none" stroke="black" d="M45.8412,-165.911C102.112,-129.408 278.092,-27.8963 379,-113 432.58,-158.189 440.952,-388.164 442.259,-461.498"/>
+<polygon fill="black" stroke="black" points="438.765,-461.924 442.414,-471.871 445.764,-461.82 438.765,-461.924"/>
+</g>
+<!-- proc~console_menu -->
+<g id="proc~~console~~CallsGraph_node7" class="node"><title>proc~console_menu</title>
+<g id="a_proc~~console~~CallsGraph_node7"><a xlink:href="../proc/console_menu.html" xlink:title="console_menu">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="379,-516 298,-516 298,-492 379,-492 379,-516"/>
+<text text-anchor="middle" x="338.5" y="-501.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">console_menu</text>
+</a>
+</g>
+</g>
+<!-- proc~console&#45;&gt;proc~console_menu -->
+<g id="proc~~console~~CallsGraph_edge42" class="edge"><title>proc~console&#45;&gt;proc~console_menu</title>
+<path fill="none" stroke="black" d="M28.4763,-190.244C31.4184,-246.18 52.1035,-477.504 194,-543 221.44,-555.666 232.907,-551.186 262,-543 280.05,-537.921 281.346,-529.617 298,-521 298.298,-520.846 298.598,-520.691 298.9,-520.537"/>
+<polygon fill="black" stroke="black" points="300.464,-523.669 307.949,-516.17 297.421,-517.365 300.464,-523.669"/>
+</g>
+<!-- proc~menu_main&#45;&gt;i18n -->
+<g id="proc~~console~~CallsGraph_edge35" class="edge"><title>proc~menu_main&#45;&gt;i18n</title>
+<path fill="none" stroke="black" d="M155.446,-369.965C194.225,-354.636 261.116,-328.194 302.12,-311.985"/>
+<polygon fill="black" stroke="black" points="303.442,-315.227 311.455,-308.295 300.869,-308.717 303.442,-315.227"/>
+</g>
+<!-- proc~menu_main&#45;&gt;proc~menu_main -->
+<g id="proc~~console~~CallsGraph_edge31" class="edge"><title>proc~menu_main&#45;&gt;proc~menu_main</title>
+<path fill="none" stroke="black" d="M108.127,-394.014C102.584,-402.972 107.875,-412 124,-412 133.826,-412 139.629,-408.647 141.409,-404.001"/>
+<polygon fill="black" stroke="black" points="144.853,-403.366 139.873,-394.014 137.934,-404.43 144.853,-403.366"/>
+</g>
+<!-- proc~menu_main&#45;&gt;terminate -->
+<g id="proc~~console~~CallsGraph_edge32" class="edge"><title>proc~menu_main&#45;&gt;terminate</title>
+<path fill="none" stroke="black" d="M125.718,-394.08C128.517,-432.89 141.32,-556.768 194,-641 226.413,-692.826 240.72,-709.657 298,-731 331.734,-743.57 350.551,-753.06 379,-731 414.844,-703.205 433.987,-561.69 440.203,-506.285"/>
+<polygon fill="black" stroke="black" points="443.706,-506.445 441.305,-496.126 436.747,-505.69 443.706,-506.445"/>
+</g>
+<!-- proc~menu_main&#45;&gt;proc~console_menu -->
+<g id="proc~~console~~CallsGraph_edge33" class="edge"><title>proc~menu_main&#45;&gt;proc~console_menu</title>
+<path fill="none" stroke="black" d="M146.431,-394.148C160.045,-401.857 178.046,-412.034 194,-421 224.181,-437.962 232.016,-441.691 262,-459 277.502,-467.949 294.65,-478.145 308.68,-486.567"/>
+<polygon fill="black" stroke="black" points="307.028,-489.657 317.402,-491.814 310.637,-483.659 307.028,-489.657"/>
+</g>
+<!-- init_data -->
+<g id="proc~~console~~CallsGraph_node8" class="node"><title>init_data</title>
+<polygon fill="#777777" stroke="#777777" points="255,-314 201,-314 201,-290 255,-290 255,-314"/>
+<text text-anchor="middle" x="228" y="-299.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">init_data</text>
+</g>
+<!-- proc~menu_main&#45;&gt;init_data -->
+<g id="proc~~console~~CallsGraph_edge26" class="edge"><title>proc~menu_main&#45;&gt;init_data</title>
+<path fill="none" stroke="black" d="M140.492,-369.85C157.289,-356.675 184.288,-335.5 203.657,-320.308"/>
+<polygon fill="black" stroke="black" points="205.988,-322.928 211.697,-314.002 201.668,-317.42 205.988,-322.928"/>
+</g>
+<!-- config -->
+<g id="proc~~console~~CallsGraph_node9" class="node"><title>config</title>
+<polygon fill="#777777" stroke="#777777" points="255,-534 201,-534 201,-510 255,-510 255,-534"/>
+<text text-anchor="middle" x="228" y="-519.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">config</text>
+</g>
+<!-- proc~menu_main&#45;&gt;config -->
+<g id="proc~~console~~CallsGraph_edge27" class="edge"><title>proc~menu_main&#45;&gt;config</title>
+<path fill="none" stroke="black" d="M129.682,-394.031C139.075,-416.995 162.088,-467.743 194,-501 194.776,-501.808 195.589,-502.6 196.431,-503.373"/>
+<polygon fill="black" stroke="black" points="194.562,-506.357 204.577,-509.812 198.902,-500.865 194.562,-506.357"/>
+</g>
+<!-- update -->
+<g id="proc~~console~~CallsGraph_node10" class="node"><title>update</title>
+<polygon fill="#777777" stroke="#777777" points="255,-492 201,-492 201,-468 255,-468 255,-492"/>
+<text text-anchor="middle" x="228" y="-477.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">update</text>
+</g>
+<!-- proc~menu_main&#45;&gt;update -->
+<g id="proc~~console~~CallsGraph_edge28" class="edge"><title>proc~menu_main&#45;&gt;update</title>
+<path fill="none" stroke="black" d="M135.75,-394.22C148.929,-408.959 172.205,-434.219 194,-454 196.754,-456.5 199.721,-459.036 202.706,-461.494"/>
+<polygon fill="black" stroke="black" points="200.522,-464.228 210.518,-467.741 204.894,-458.762 200.522,-464.228"/>
+</g>
+<!-- proc~menu_page -->
+<g id="proc~~console~~CallsGraph_node11" class="node"><title>proc~menu_page</title>
+<g id="a_proc~~console~~CallsGraph_node11"><a xlink:href="../proc/menu_page.html" xlink:title="menu_page">
+<polygon fill="#d9534f" stroke="#d9534f" points="262,-394 194,-394 194,-370 262,-370 262,-394"/>
+<text text-anchor="middle" x="228" y="-379.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">menu_page</text>
+</a>
+</g>
+</g>
+<!-- proc~menu_main&#45;&gt;proc~menu_page -->
+<g id="proc~~console~~CallsGraph_edge29" class="edge"><title>proc~menu_main&#45;&gt;proc~menu_page</title>
+<path fill="none" stroke="black" d="M157.554,-375.659C165.851,-375.275 174.901,-375.162 183.644,-375.318"/>
+<polygon fill="black" stroke="black" points="183.602,-378.818 193.704,-375.625 183.816,-371.821 183.602,-378.818"/>
+</g>
+<!-- proc~menu_css -->
+<g id="proc~~console~~CallsGraph_node12" class="node"><title>proc~menu_css</title>
+<g id="a_proc~~console~~CallsGraph_node12"><a xlink:href="../proc/menu_css.html" xlink:title="menu_css">
+<polygon fill="#d9534f" stroke="#d9534f" points="258,-216 198,-216 198,-192 258,-192 258,-216"/>
+<text text-anchor="middle" x="228" y="-201.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">menu_css</text>
+</a>
+</g>
+</g>
+<!-- proc~menu_main&#45;&gt;proc~menu_css -->
+<g id="proc~~console~~CallsGraph_edge30" class="edge"><title>proc~menu_main&#45;&gt;proc~menu_css</title>
+<path fill="none" stroke="black" d="M130.198,-369.742C145.243,-339.401 189.224,-262.078 212.37,-224.628"/>
+<polygon fill="black" stroke="black" points="215.422,-226.349 217.775,-216.019 209.494,-222.627 215.422,-226.349"/>
+</g>
+<!-- proc~menu_post -->
+<g id="proc~~console~~CallsGraph_node13" class="node"><title>proc~menu_post</title>
+<g id="a_proc~~console~~CallsGraph_node13"><a xlink:href="../proc/menu_post.html" xlink:title="menu_post">
+<polygon fill="#d9534f" stroke="#d9534f" points="260,-614 196,-614 196,-590 260,-590 260,-614"/>
+<text text-anchor="middle" x="228" y="-599.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">menu_post</text>
+</a>
+</g>
+</g>
+<!-- proc~menu_main&#45;&gt;proc~menu_post -->
+<g id="proc~~console~~CallsGraph_edge34" class="edge"><title>proc~menu_main&#45;&gt;proc~menu_post</title>
+<path fill="none" stroke="black" d="M131.862,-394.172C143.644,-420.59 168.885,-482.979 194,-534 201.675,-549.591 211.511,-566.883 218.44,-580.435"/>
+<polygon fill="black" stroke="black" points="215.366,-582.115 222.901,-589.564 221.655,-579.042 215.366,-582.115"/>
+</g>
+<!-- proc~console_menu&#45;&gt;terminate -->
+<g id="proc~~console~~CallsGraph_edge36" class="edge"><title>proc~console_menu&#45;&gt;terminate</title>
+<path fill="none" stroke="black" d="M379.028,-496.325C387.498,-494.68 396.425,-492.947 404.823,-491.316"/>
+<polygon fill="black" stroke="black" points="405.587,-494.733 414.737,-489.391 404.253,-487.861 405.587,-494.733"/>
+</g>
+<!-- proc~menu_page&#45;&gt;i18n -->
+<g id="proc~~console~~CallsGraph_edge8" class="edge"><title>proc~menu_page&#45;&gt;i18n</title>
+<path fill="none" stroke="black" d="M245.125,-369.98C250.608,-365.715 256.689,-360.784 262,-356 279.048,-340.645 279.65,-332.773 298,-319 299.584,-317.811 301.244,-316.651 302.95,-315.525"/>
+<polygon fill="black" stroke="black" points="304.977,-318.389 311.714,-310.213 301.348,-312.403 304.977,-318.389"/>
+</g>
+<!-- proc~menu_page&#45;&gt;proc~menu_main -->
+<g id="proc~~console~~CallsGraph_edge5" class="edge"><title>proc~menu_page&#45;&gt;proc~menu_main</title>
+<path fill="none" stroke="black" d="M193.704,-388.375C185.363,-388.742 176.301,-388.84 167.576,-388.667"/>
+<polygon fill="black" stroke="black" points="167.662,-385.169 157.554,-388.341 167.435,-392.165 167.662,-385.169"/>
+</g>
+<!-- proc~menu_page&#45;&gt;terminate -->
+<g id="proc~~console~~CallsGraph_edge6" class="edge"><title>proc~menu_page&#45;&gt;terminate</title>
+<path fill="none" stroke="black" d="M238.944,-394.062C251.329,-408.306 273.823,-431.736 298,-445 331.624,-463.448 374.51,-473.587 404.801,-478.867"/>
+<polygon fill="black" stroke="black" points="404.518,-482.367 414.954,-480.537 405.654,-475.46 404.518,-482.367"/>
+</g>
+<!-- proc~menu_page&#45;&gt;proc~console_menu -->
+<g id="proc~~console~~CallsGraph_edge7" class="edge"><title>proc~menu_page&#45;&gt;proc~console_menu</title>
+<path fill="none" stroke="black" d="M238.372,-394.235C245.047,-403.013 254.184,-415.155 262,-426 278.436,-448.803 277.893,-458.358 298,-478 300.891,-480.824 304.13,-483.523 307.477,-486.04"/>
+<polygon fill="black" stroke="black" points="305.675,-489.051 315.881,-491.894 309.675,-483.307 305.675,-489.051"/>
+</g>
+<!-- proc~menu_page&#45;&gt;proc~menu_page -->
+<g id="proc~~console~~CallsGraph_edge2" class="edge"><title>proc~menu_page&#45;&gt;proc~menu_page</title>
+<path fill="none" stroke="black" d="M210.804,-394.014C204.799,-402.972 210.531,-412 228,-412 238.645,-412 244.932,-408.647 246.86,-404.001"/>
+<polygon fill="black" stroke="black" points="250.292,-403.303 245.196,-394.014 243.387,-404.453 250.292,-403.303"/>
+</g>
+<!-- list_pages -->
+<g id="proc~~console~~CallsGraph_node14" class="node"><title>list_pages</title>
+<polygon fill="#777777" stroke="#777777" points="369,-394 308,-394 308,-370 369,-370 369,-394"/>
+<text text-anchor="middle" x="338.5" y="-379.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">list_pages</text>
+</g>
+<!-- proc~menu_page&#45;&gt;list_pages -->
+<g id="proc~~console~~CallsGraph_edge1" class="edge"><title>proc~menu_page&#45;&gt;list_pages</title>
+<path fill="none" stroke="black" d="M262.143,-382C273.308,-382 285.886,-382 297.522,-382"/>
+<polygon fill="black" stroke="black" points="297.874,-385.5 307.874,-382 297.874,-378.5 297.874,-385.5"/>
+</g>
+<!-- delete_page -->
+<g id="proc~~console~~CallsGraph_node15" class="node"><title>delete_page</title>
+<polygon fill="#777777" stroke="#777777" points="374.5,-352 302.5,-352 302.5,-328 374.5,-328 374.5,-352"/>
+<text text-anchor="middle" x="338.5" y="-337.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">delete_page</text>
+</g>
+<!-- proc~menu_page&#45;&gt;delete_page -->
+<g id="proc~~console~~CallsGraph_edge3" class="edge"><title>proc~menu_page&#45;&gt;delete_page</title>
+<path fill="none" stroke="black" d="M260.092,-369.964C271.555,-365.527 284.717,-360.432 296.897,-355.717"/>
+<polygon fill="black" stroke="black" points="298.342,-358.911 306.404,-352.037 295.815,-352.383 298.342,-358.911"/>
+</g>
+<!-- edit_page -->
+<g id="proc~~console~~CallsGraph_node16" class="node"><title>edit_page</title>
+<polygon fill="#777777" stroke="#777777" points="368.5,-436 308.5,-436 308.5,-412 368.5,-412 368.5,-436"/>
+<text text-anchor="middle" x="338.5" y="-421.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">edit_page</text>
+</g>
+<!-- proc~menu_page&#45;&gt;edit_page -->
+<g id="proc~~console~~CallsGraph_edge4" class="edge"><title>proc~menu_page&#45;&gt;edit_page</title>
+<path fill="none" stroke="black" d="M260.092,-394.036C272.168,-398.71 286.128,-404.114 298.841,-409.035"/>
+<polygon fill="black" stroke="black" points="297.678,-412.338 308.267,-412.684 300.205,-405.81 297.678,-412.338"/>
+</g>
+<!-- proc~menu_css&#45;&gt;i18n -->
+<g id="proc~~console~~CallsGraph_edge9" class="edge"><title>proc~menu_css&#45;&gt;i18n</title>
+<path fill="none" stroke="black" d="M240.067,-216.282C253.181,-230.498 276.031,-254.231 298,-272 301.375,-274.73 305.041,-277.441 308.734,-280.025"/>
+<polygon fill="black" stroke="black" points="307.024,-283.093 317.274,-285.773 310.932,-277.286 307.024,-283.093"/>
+</g>
+<!-- proc~menu_css&#45;&gt;proc~menu_main -->
+<g id="proc~~console~~CallsGraph_edge11" class="edge"><title>proc~menu_css&#45;&gt;proc~menu_main</title>
+<path fill="none" stroke="black" d="M221.796,-216.271C206.746,-246.617 162.782,-323.911 139.637,-361.36"/>
+<polygon fill="black" stroke="black" points="136.585,-359.64 134.232,-369.97 142.513,-363.362 136.585,-359.64"/>
+</g>
+<!-- proc~menu_css&#45;&gt;terminate -->
+<g id="proc~~console~~CallsGraph_edge16" class="edge"><title>proc~menu_css&#45;&gt;terminate</title>
+<path fill="none" stroke="black" d="M252.226,-216.006C265.568,-222.846 282.67,-231.518 298,-239 333.736,-256.441 352.933,-246.971 379,-277 426.176,-331.346 438.305,-420.176 441.422,-461.519"/>
+<polygon fill="black" stroke="black" points="437.938,-461.875 442.073,-471.629 444.924,-461.425 437.938,-461.875"/>
+</g>
+<!-- proc~menu_css&#45;&gt;proc~console_menu -->
+<g id="proc~~console~~CallsGraph_edge14" class="edge"><title>proc~menu_css&#45;&gt;proc~console_menu</title>
+<path fill="none" stroke="black" d="M235.113,-216.26C242.372,-231.227 254.446,-257.457 262,-281 284.8,-352.056 268.732,-376.355 298,-445 303.875,-458.779 313.072,-472.77 321.114,-483.668"/>
+<polygon fill="black" stroke="black" points="318.381,-485.856 327.231,-491.681 323.945,-481.609 318.381,-485.856"/>
+</g>
+<!-- proc~menu_css&#45;&gt;proc~menu_css -->
+<g id="proc~~console~~CallsGraph_edge15" class="edge"><title>proc~menu_css&#45;&gt;proc~menu_css</title>
+<path fill="none" stroke="black" d="M210.804,-216.014C204.799,-224.972 210.531,-234 228,-234 238.645,-234 244.932,-230.647 246.86,-226.001"/>
+<polygon fill="black" stroke="black" points="250.292,-225.303 245.196,-216.014 243.387,-226.453 250.292,-225.303"/>
+</g>
+<!-- delete_css -->
+<g id="proc~~console~~CallsGraph_node17" class="node"><title>delete_css</title>
+<polygon fill="#777777" stroke="#777777" points="370.5,-188 306.5,-188 306.5,-164 370.5,-164 370.5,-188"/>
+<text text-anchor="middle" x="338.5" y="-173.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">delete_css</text>
+</g>
+<!-- proc~menu_css&#45;&gt;delete_css -->
+<g id="proc~~console~~CallsGraph_edge10" class="edge"><title>proc~menu_css&#45;&gt;delete_css</title>
+<path fill="none" stroke="black" d="M258.076,-196.497C269.864,-193.454 283.69,-189.886 296.473,-186.588"/>
+<polygon fill="black" stroke="black" points="297.634,-189.903 306.442,-184.015 295.885,-183.125 297.634,-189.903"/>
+</g>
+<!-- list_css -->
+<g id="proc~~console~~CallsGraph_node18" class="node"><title>list_css</title>
+<polygon fill="#777777" stroke="#777777" points="365.5,-146 311.5,-146 311.5,-122 365.5,-122 365.5,-146"/>
+<text text-anchor="middle" x="338.5" y="-131.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">list_css</text>
+</g>
+<!-- proc~menu_css&#45;&gt;list_css -->
+<g id="proc~~console~~CallsGraph_edge12" class="edge"><title>proc~menu_css&#45;&gt;list_css</title>
+<path fill="none" stroke="black" d="M244.774,-191.914C258.508,-181.608 279.122,-166.654 298,-155 300.14,-153.679 302.37,-152.357 304.633,-151.054"/>
+<polygon fill="black" stroke="black" points="306.371,-154.092 313.409,-146.173 302.968,-147.975 306.371,-154.092"/>
+</g>
+<!-- edit_css -->
+<g id="proc~~console~~CallsGraph_node19" class="node"><title>edit_css</title>
+<polygon fill="#777777" stroke="#777777" points="365.5,-230 311.5,-230 311.5,-206 365.5,-206 365.5,-230"/>
+<text text-anchor="middle" x="338.5" y="-215.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">edit_css</text>
+</g>
+<!-- proc~menu_css&#45;&gt;edit_css -->
+<g id="proc~~console~~CallsGraph_edge13" class="edge"><title>proc~menu_css&#45;&gt;edit_css</title>
+<path fill="none" stroke="black" d="M258.076,-207.752C271.282,-209.456 287.044,-211.49 301.033,-213.295"/>
+<polygon fill="black" stroke="black" points="300.947,-216.812 311.313,-214.621 301.843,-209.87 300.947,-216.812"/>
+</g>
+<!-- proc~menu_post&#45;&gt;i18n -->
+<g id="proc~~console~~CallsGraph_edge17" class="edge"><title>proc~menu_post&#45;&gt;i18n</title>
+<path fill="none" stroke="black" d="M237.42,-589.941C245.048,-578.419 255.986,-560.293 262,-543 295.119,-447.761 239.351,-401.022 298,-319 299.502,-316.899 301.28,-314.99 303.238,-313.258"/>
+<polygon fill="black" stroke="black" points="305.333,-316.063 311.469,-307.425 301.286,-310.351 305.333,-316.063"/>
+</g>
+<!-- proc~menu_post&#45;&gt;proc~menu_main -->
+<g id="proc~~console~~CallsGraph_edge21" class="edge"><title>proc~menu_post&#45;&gt;proc~menu_main</title>
+<path fill="none" stroke="black" d="M215.166,-590C208.627,-579.768 200.531,-565.268 194,-552 168.55,-500.299 142.971,-436.925 131.398,-403.835"/>
+<polygon fill="black" stroke="black" points="134.664,-402.565 128.151,-394.209 128.031,-404.803 134.664,-402.565"/>
+</g>
+<!-- proc~menu_post&#45;&gt;terminate -->
+<g id="proc~~console~~CallsGraph_edge22" class="edge"><title>proc~menu_post&#45;&gt;terminate</title>
+<path fill="none" stroke="black" d="M249.308,-589.984C262.937,-582.055 281.371,-571.584 298,-563 333.334,-544.759 344.218,-544.273 379,-525 391.68,-517.974 405.241,-509.377 416.561,-501.873"/>
+<polygon fill="black" stroke="black" points="418.748,-504.621 425.1,-496.141 414.847,-498.809 418.748,-504.621"/>
+</g>
+<!-- proc~menu_post&#45;&gt;proc~console_menu -->
+<g id="proc~~console~~CallsGraph_edge23" class="edge"><title>proc~menu_post&#45;&gt;proc~console_menu</title>
+<path fill="none" stroke="black" d="M246.105,-589.776C251.425,-585.651 257.16,-580.856 262,-576 280.327,-557.613 278.907,-547.59 298,-530 301.125,-527.121 304.6,-524.344 308.157,-521.745"/>
+<polygon fill="black" stroke="black" points="310.21,-524.581 316.477,-516.039 306.251,-518.808 310.21,-524.581"/>
+</g>
+<!-- proc~menu_post&#45;&gt;proc~menu_post -->
+<g id="proc~~console~~CallsGraph_edge24" class="edge"><title>proc~menu_post&#45;&gt;proc~menu_post</title>
+<path fill="none" stroke="black" d="M210.804,-614.014C204.799,-622.972 210.531,-632 228,-632 238.645,-632 244.932,-628.647 246.86,-624.001"/>
+<polygon fill="black" stroke="black" points="250.292,-623.303 245.196,-614.014 243.387,-624.453 250.292,-623.303"/>
+</g>
+<!-- edit_post -->
+<g id="proc~~console~~CallsGraph_node20" class="node"><title>edit_post</title>
+<polygon fill="#777777" stroke="#777777" points="366.5,-638 310.5,-638 310.5,-614 366.5,-614 366.5,-638"/>
+<text text-anchor="middle" x="338.5" y="-623.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">edit_post</text>
+</g>
+<!-- proc~menu_post&#45;&gt;edit_post -->
+<g id="proc~~console~~CallsGraph_edge18" class="edge"><title>proc~menu_post&#45;&gt;edit_post</title>
+<path fill="none" stroke="black" d="M260.092,-608.877C272.642,-611.654 287.228,-614.88 300.333,-617.779"/>
+<polygon fill="black" stroke="black" points="299.939,-621.276 310.459,-620.018 301.451,-614.441 299.939,-621.276"/>
+</g>
+<!-- list_posts -->
+<g id="proc~~console~~CallsGraph_node21" class="node"><title>list_posts</title>
+<polygon fill="#777777" stroke="#777777" points="367,-596 310,-596 310,-572 367,-572 367,-596"/>
+<text text-anchor="middle" x="338.5" y="-581.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">list_posts</text>
+</g>
+<!-- proc~menu_post&#45;&gt;list_posts -->
+<g id="proc~~console~~CallsGraph_edge19" class="edge"><title>proc~menu_post&#45;&gt;list_posts</title>
+<path fill="none" stroke="black" d="M260.092,-596.842C272.445,-594.793 286.769,-592.416 299.713,-590.269"/>
+<polygon fill="black" stroke="black" points="300.441,-593.696 309.734,-588.606 299.296,-586.79 300.441,-593.696"/>
+</g>
+<!-- add_post -->
+<g id="proc~~console~~CallsGraph_node22" class="node"><title>add_post</title>
+<polygon fill="#777777" stroke="#777777" points="367,-722 310,-722 310,-698 367,-698 367,-722"/>
+<text text-anchor="middle" x="338.5" y="-707.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">add_post</text>
+</g>
+<!-- proc~menu_post&#45;&gt;add_post -->
+<g id="proc~~console~~CallsGraph_edge20" class="edge"><title>proc~menu_post&#45;&gt;add_post</title>
+<path fill="none" stroke="black" d="M236.393,-614.277C247.797,-632.425 271.188,-666.67 298,-689 299.354,-690.128 300.778,-691.22 302.25,-692.275"/>
+<polygon fill="black" stroke="black" points="300.721,-695.452 311.032,-697.889 304.491,-689.554 300.721,-695.452"/>
+</g>
+<!-- delete_post -->
+<g id="proc~~console~~CallsGraph_node23" class="node"><title>delete_post</title>
+<polygon fill="#777777" stroke="#777777" points="372.5,-680 304.5,-680 304.5,-656 372.5,-656 372.5,-680"/>
+<text text-anchor="middle" x="338.5" y="-665.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">delete_post</text>
+</g>
+<!-- proc~menu_post&#45;&gt;delete_post -->
+<g id="proc~~console~~CallsGraph_edge25" class="edge"><title>proc~menu_post&#45;&gt;delete_post</title>
+<path fill="none" stroke="black" d="M246.595,-614.098C260.378,-623.421 280.142,-636.458 298,-647 300.303,-648.36 302.702,-649.734 305.128,-651.093"/>
+<polygon fill="black" stroke="black" points="303.463,-654.172 313.916,-655.904 306.825,-648.032 303.463,-654.172"/>
+</g>
+</g>
+</svg>
+</div>
+                <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+                <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                      </div>
+                      <div class="modal-body">
+                        
+Nodes of different colours represent the following:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="641pt" height="26pt"
+ viewBox="0.00 0.00 641.00 26.18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(0.818124 0.818124) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-28 779.5,-28 779.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node"><title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,-0 54,-0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node"><title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="136,-24 72,-24 72,-0 136,-0 136,-24"/>
+<text text-anchor="middle" x="104" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Type -->
+<g id="node3" class="node"><title>Type</title>
+<polygon fill="#5cb85c" stroke="#5cb85c" points="208,-24 154,-24 154,-0 208,-0 208,-24"/>
+<text text-anchor="middle" x="181" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type</text>
+</g>
+<!-- Subroutine -->
+<g id="node4" class="node"><title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="288,-24 226,-24 226,-0 288,-0 288,-24"/>
+<text text-anchor="middle" x="257" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node5" class="node"><title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="360,-24 306,-24 306,-0 360,-0 360,-24"/>
+<text text-anchor="middle" x="333" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node6" class="node"><title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="433.5,-24 378.5,-24 378.5,-0 433.5,-0 433.5,-24"/>
+<text text-anchor="middle" x="406" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node7" class="node"><title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="588,-24 452,-24 452,-0 588,-0 588,-24"/>
+<text text-anchor="middle" x="520" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node8" class="node"><title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="660,-24 606,-24 606,-0 660,-0 660,-24"/>
+<text text-anchor="middle" x="633" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node9" class="node"><title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="775.5,-24 678.5,-24 678.5,-0 775.5,-0 775.5,-24"/>
+<text text-anchor="middle" x="727" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<h5>Module Graph</h5>
+<p>Solid arrows point from a parent (sub)module to the submodule which is
+descended from it. Dashed arrows point from a module being used to the
+module using it.</p>
+<h5>Type Graph</h5>
+<p>Solid arrows point from one derived type to another which extends
+(inherits from) it. Dashed arrows point from a derived type to another
+type containing it as a components, with a label listing the name(s) of
+said component(s).</p>
+<h5>Call Graph</h5>
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+     
+     
+    <br>
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    <section>
+    <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="highlight"><pre><span></span>  <span class="k">subroutine </span><span class="n">console</span><span class="p">()</span>
+    <span class="c">!! Head routine for console mode.</span>
+    <span class="c">!</span>
+    <span class="k">use</span><span class="p">,</span> <span class="k">intrinsic</span> <span class="kd">::</span> <span class="n">iso_fortran_env</span><span class="p">,</span> <span class="n">only</span><span class="p">:</span> <span class="n">compiler_version</span><span class="p">,</span> <span class="n">compiler_options</span>
+    <span class="c">!</span>
+    <span class="k">print</span> <span class="s1">&#39;(a,2/,a,2/)&#39;</span><span class="p">,</span> <span class="n">show_version</span><span class="p">,</span> <span class="n">compiler_version</span><span class="p">()</span> <span class="o">//</span> <span class="s1">&#39; (&#39;</span> <span class="o">//</span> <span class="n">compiler_options</span><span class="p">()</span> <span class="o">//</span> <span class="s1">&#39;)&#39;</span>
+    <span class="k">inquire</span><span class="p">(</span><span class="k">file</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="n">fblog_dir</span> <span class="o">//</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">exist</span> <span class="o">=</span> <span class="n">file_exist</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(.</span><span class="nb">not</span><span class="p">.</span> <span class="n">file_exist</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">       inquire</span><span class="p">(</span><span class="k">file</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="n">FBLOG_DIR</span> <span class="o">//</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">exist</span> <span class="o">=</span> <span class="n">directory_exist</span><span class="p">)</span>
+       <span class="k">if</span> <span class="p">(.</span><span class="nb">not</span><span class="p">.</span> <span class="n">directory_exist</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">          call </span><span class="nb">execute_command_line</span><span class="p">(</span><span class="n">command</span> <span class="o">=</span> <span class="s1">&#39;stty -g &gt; &#39;</span> <span class="o">//</span> <span class="n">path</span> <span class="o">//</span> <span class="s1">&#39;stty_g&#39;</span><span class="p">,</span> <span class="n">exitstat</span> <span class="o">=</span> <span class="n">exit_status</span><span class="p">,</span> <span class="n">cmdstat</span> <span class="o">=</span> <span class="n">command_status</span><span class="p">,&amp;</span>
+               <span class="p">&amp;</span> <span class="n">cmdmsg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">exit_status</span> <span class="o">/=</span> <span class="mi">0</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">command_status</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1131</span><span class="p">,</span> <span class="n">cmd_msg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+          <span class="k">open</span><span class="p">(</span><span class="n">newunit</span> <span class="o">=</span> <span class="n">lu_stty_g</span><span class="p">,</span> <span class="k">file</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="s1">&#39;stty_g&#39;</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="s1">&#39;old&#39;</span><span class="p">,</span> <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;read&#39;</span><span class="p">,</span> <span class="n">iostat</span> <span class="o">=</span> <span class="n">ios</span><span class="p">,</span> <span class="n">iomsg</span> <span class="o">=</span> <span class="n">system_msg</span><span class="p">)</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">ios</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1132</span><span class="p">,</span> <span class="n">sys_msg</span> <span class="o">=</span> <span class="n">system_msg</span><span class="p">)</span>
+          <span class="k">read</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="n">lu_stty_g</span><span class="p">,</span> <span class="n">fmt</span> <span class="o">=</span> <span class="s1">&#39;(a)&#39;</span><span class="p">)</span> <span class="n">terminal_settings</span>
+          <span class="k">close</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="n">lu_stty_g</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="s1">&#39;delete&#39;</span><span class="p">)</span>
+       <span class="k">else if</span> <span class="p">(</span><span class="n">directory_exist</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">          call </span><span class="nb">execute_command_line</span><span class="p">(</span><span class="n">command</span> <span class="o">=</span> <span class="s1">&#39;stty -g &gt; &#39;</span> <span class="o">//</span> <span class="n">path</span> <span class="o">//</span> <span class="n">fblog_dir</span> <span class="o">//</span><span class="s1">&#39;stty_g&#39;</span><span class="p">,</span> <span class="n">exitstat</span> <span class="o">=</span> <span class="n">exit_status</span><span class="p">,</span> <span class="n">cmdstat</span> <span class="o">=</span><span class="p">&amp;</span>
+               <span class="p">&amp;</span> <span class="n">command_status</span><span class="p">,</span> <span class="n">cmdmsg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">exit_status</span> <span class="o">/=</span> <span class="mi">0</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">command_status</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1133</span><span class="p">,</span> <span class="n">cmd_msg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+          <span class="k">open</span><span class="p">(</span><span class="n">newunit</span> <span class="o">=</span> <span class="n">lu_stty_g</span><span class="p">,</span> <span class="k">file</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="n">fblog_dir</span> <span class="o">//</span> <span class="s1">&#39;stty_g&#39;</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="s1">&#39;old&#39;</span><span class="p">,</span> <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;read&#39;</span><span class="p">,</span> <span class="n">iostat</span> <span class="o">=</span> <span class="n">ios</span><span class="p">,</span> <span class="n">iomsg</span> <span class="o">=</span><span class="p">&amp;</span>
+               <span class="p">&amp;</span> <span class="n">system_msg</span><span class="p">)</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">ios</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1134</span><span class="p">,</span> <span class="n">sys_msg</span> <span class="o">=</span> <span class="n">system_msg</span><span class="p">)</span>
+          <span class="k">read</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="n">lu_stty_g</span><span class="p">,</span> <span class="n">fmt</span> <span class="o">=</span> <span class="s1">&#39;(a)&#39;</span><span class="p">)</span> <span class="n">terminal_settings</span>
+          <span class="k">close</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="n">lu_stty_g</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="s1">&#39;delete&#39;</span><span class="p">)</span>
+       <span class="k">end if</span>
+<span class="k">       </span><span class="n">choice</span> <span class="o">=</span> <span class="n">console_menu</span><span class="p">(</span><span class="n">i18n</span><span class="p">(</span><span class="n">quit</span><span class="p">)</span> <span class="o">//</span> <span class="s1">&#39;,&#39;</span> <span class="o">//</span> <span class="n">i18n</span><span class="p">(</span><span class="n">create_new_blog</span><span class="p">))</span>
+       <span class="k">select case</span> <span class="p">(</span><span class="n">choice</span><span class="p">)</span>
+       <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;q&#39;</span><span class="p">,</span> <span class="s1">&#39;Q&#39;</span><span class="p">,</span> <span class="s1">&#39;0&#39;</span><span class="p">)</span>
+          <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">bye</span>
+          <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+       <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+          <span class="k">call </span><span class="n">create_blog</span><span class="p">()</span>
+          <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">ok</span>
+       <span class="k">case </span><span class="n">default</span>
+          <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1135</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">wrong_entry</span><span class="p">))</span>
+       <span class="k">end select</span>
+<span class="k">    end if</span>
+<span class="k">    call </span><span class="nb">execute_command_line</span><span class="p">(</span><span class="n">command</span> <span class="o">=</span> <span class="s1">&#39;stty -g &gt; &#39;</span> <span class="o">//</span> <span class="nb">trim</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="o">//</span> <span class="n">fblog_dir</span> <span class="o">//</span><span class="s1">&#39;stty_g&#39;</span><span class="p">,</span> <span class="n">exitstat</span> <span class="o">=</span> <span class="n">exit_status</span><span class="p">,</span> <span class="n">cmdstat</span> <span class="o">=</span><span class="p">&amp;</span>
+         <span class="p">&amp;</span> <span class="n">command_status</span><span class="p">,</span> <span class="n">cmdmsg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">exit_status</span> <span class="o">/=</span> <span class="mi">0</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">command_status</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1136</span><span class="p">,</span> <span class="n">cmd_msg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+    <span class="k">open</span><span class="p">(</span><span class="n">newunit</span> <span class="o">=</span> <span class="n">lu_stty_g</span><span class="p">,</span> <span class="k">file</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="n">fblog_dir</span> <span class="o">//</span> <span class="s1">&#39;stty_g&#39;</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="s1">&#39;old&#39;</span><span class="p">,</span> <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;read&#39;</span><span class="p">,</span> <span class="n">iostat</span> <span class="o">=</span> <span class="n">ios</span><span class="p">,</span> <span class="n">iomsg</span> <span class="o">=</span><span class="p">&amp;</span>
+         <span class="p">&amp;</span> <span class="n">system_msg</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ios</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1137</span><span class="p">,</span> <span class="n">sys_msg</span> <span class="o">=</span> <span class="n">system_msg</span><span class="p">)</span>
+    <span class="k">read</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="n">lu_stty_g</span><span class="p">,</span> <span class="n">fmt</span> <span class="o">=</span> <span class="s1">&#39;(a)&#39;</span><span class="p">)</span> <span class="n">terminal_settings</span>
+    <span class="k">close</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="n">lu_stty_g</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="s1">&#39;delete&#39;</span><span class="p">)</span>
+    <span class="k">call </span><span class="n">init_conf</span><span class="p">()</span>
+    <span class="k">call </span><span class="n">menu_main</span><span class="p">()</span>
+    <span class="k">error stop</span> <span class="s1">&#39;Internal error in subroutine console()&#39;</span>
+  <span class="k">end subroutine </span><span class="n">console</span>
+</pre></div>
+
+    </section>
+    <br>
+    
+    
+    </div>
+  </div>
+
+    <hr>
+    <footer>
+        <div class="row">
+        <div class="col-md-4">&copy; 2016 <a rel="license" href="http://www.gnu.org/licenses/old-licenses/fdl-1.2.en.html">GNU Free Documentation License</a></div>
+	<div class="col-md-4"><span class="text-center"> fBlog was developed by Denis BERNARD</span></div>
+        <div class="col-md-4"><span class="pull-right">Documentation generated by <a href="https://github.com/cmacmackin/ford">FORD</a></span></div>
+        </div>
+        <br>
+    </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js'],
+        'HTML-CSS': { 
+           styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: '#000000 ! important'} }
+        }
+      });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>

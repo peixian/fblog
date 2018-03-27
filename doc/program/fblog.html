@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	 <meta name="description" content="Stand-alone static site generator for Linux console">
+    
+    <meta name="author" content="Chris MacMackin" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>fblog &ndash; fBlog</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">fBlog </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+				
+                
+            <li><a href="../lists/files.html">Source Files</a></li>
+				
+				
+            <li><a href="../lists/modules.html">Modules</a></li>
+				
+				
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+				
+								
+            <li><a href="../lists/types.html">Derived Types</a></li>
+				
+				
+            <li><a href="../program/fblog.html">Program</a></li>
+				
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>fblog 
+    <small>Program</small>
+    
+    </h1>
+	 
+<div class="row">
+<div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+    <li><i class="fa fa-code"></i><a href="../src/main.f08"> Source File</a></li>
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+     <li><a href='../sourcefile/main.f08.html'>main.f08</a></li>
+  
+     <li class="active">fblog</li>
+  </ol>
+</div>
+</div>
+</div>
+    
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-3">
+    
+<div id="sidebar">
+  
+  
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars">Variables</a></h3></div>
+    <div id="vars" class="panel-collapse collapse">
+      <div class="list-group">
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-css_2_delete%7E2">css_2_delete</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-css_2_edit%7E2">css_2_edit</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-page_2_edit%7E2">page_2_edit</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-page_2_delete%7E2">page_2_delete</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-arg">arg</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-char_rank">char_rank</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-argc">argc</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-i%7E8">i</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-ios%7E14">ios</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-len_path">len_path</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-rank_val%7E2">rank_val</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-config_has_been_recorded%7E2">config_has_been_recorded</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-css_has_been_recorded%7E2">css_has_been_recorded</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-file_exist%7E8">file_exist</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-page_has_been_recorded%7E2">page_has_been_recorded</a>
+        
+        <a class="list-group-item" href="../program/fblog.html#variable-post_has_been_recorded%7E2">post_has_been_recorded</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+    <div class="list-group">
+      <a class="list-group-item" href="../program/fblog.html#src">fblog</a>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#allprogs">All Programs</a></h3></div>
+    <div id="allprogs" class="panel-collapse collapse">
+        <div class="list-group">
+          
+          <a class="list-group-item" href="../program/fblog.html">fblog</a>
+          
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+    </div>
+    
+    <div class="col-lg-9" id='text'>
+    
+  
+
+    
+    
+    
+    
+     <h3>Calls</h3>
+     
+                <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: program~~fblog~~CallsGraph Pages: 1 -->
+<svg id="programfblogCallsGraph" width="170pt" height="746pt"
+ viewBox="0.00 0.00 170.00 746.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="program~~fblog~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 742)">
+<title>program~~fblog~~CallsGraph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-742 166,-742 166,4 -4,4"/>
+<!-- program~fblog -->
+<g id="program~~fblog~~CallsGraph_node1" class="node"><title>program~fblog</title>
+<polygon fill="none" stroke="black" points="54,-381 0,-381 0,-357 54,-357 54,-381"/>
+<text text-anchor="middle" x="27" y="-366.6" font-family="Helvetica,sans-Serif" font-size="10.50">fblog</text>
+</g>
+<!-- path -->
+<g id="program~~fblog~~CallsGraph_node2" class="node"><title>path</title>
+<polygon fill="#777777" stroke="#777777" points="153,-738 99,-738 99,-714 153,-714 153,-738"/>
+<text text-anchor="middle" x="126" y="-723.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">path</text>
+</g>
+<!-- program~fblog&#45;&gt;path -->
+<g id="program~~fblog~~CallsGraph_edge1" class="edge"><title>program~fblog&#45;&gt;path</title>
+<path fill="none" stroke="black" d="M28.9174,-381.237C33.1504,-435.067 52.2203,-650.532 90,-705 90.4392,-705.633 90.9043,-706.251 91.3922,-706.852"/>
+<polygon fill="black" stroke="black" points="89.099,-709.5 98.7794,-713.806 93.897,-704.403 89.099,-709.5"/>
+</g>
+<!-- i18n -->
+<g id="program~~fblog~~CallsGraph_node3" class="node"><title>i18n</title>
+<polygon fill="#777777" stroke="#777777" points="153,-696 99,-696 99,-672 153,-672 153,-696"/>
+<text text-anchor="middle" x="126" y="-681.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">i18n</text>
+</g>
+<!-- program~fblog&#45;&gt;i18n -->
+<g id="program~~fblog~~CallsGraph_edge2" class="edge"><title>program~fblog&#45;&gt;i18n</title>
+<path fill="none" stroke="black" d="M29.2479,-381.016C34.5487,-430.221 56.4744,-615.951 90,-663 90.4472,-663.628 90.9196,-664.24 91.4142,-664.837"/>
+<polygon fill="black" stroke="black" points="89.148,-667.509 98.8559,-671.752 93.9132,-662.381 89.148,-667.509"/>
+</g>
+<!-- edit_post -->
+<g id="program~~fblog~~CallsGraph_node4" class="node"><title>edit_post</title>
+<polygon fill="#777777" stroke="#777777" points="154,-654 98,-654 98,-630 154,-630 154,-654"/>
+<text text-anchor="middle" x="126" y="-639.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">edit_post</text>
+</g>
+<!-- program~fblog&#45;&gt;edit_post -->
+<g id="program~~fblog~~CallsGraph_edge3" class="edge"><title>program~fblog&#45;&gt;edit_post</title>
+<path fill="none" stroke="black" d="M27.836,-381.131C27.9111,-420.029 32.8786,-543.605 90,-621 90.5523,-621.748 91.14,-622.475 91.7579,-623.181"/>
+<polygon fill="black" stroke="black" points="89.5207,-625.875 99.3066,-629.936 94.1887,-620.659 89.5207,-625.875"/>
+</g>
+<!-- delete_page -->
+<g id="program~~fblog~~CallsGraph_node5" class="node"><title>delete_page</title>
+<polygon fill="#777777" stroke="#777777" points="162,-612 90,-612 90,-588 162,-588 162,-612"/>
+<text text-anchor="middle" x="126" y="-597.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">delete_page</text>
+</g>
+<!-- program~fblog&#45;&gt;delete_page -->
+<g id="program~~fblog~~CallsGraph_edge4" class="edge"><title>program~fblog&#45;&gt;delete_page</title>
+<path fill="none" stroke="black" d="M28.5844,-381.283C30.8187,-415.962 41.368,-516.174 90,-579 90.5693,-579.735 91.1722,-580.451 91.8038,-581.146"/>
+<polygon fill="black" stroke="black" points="89.6133,-583.88 99.4433,-587.832 94.2237,-578.613 89.6133,-583.88"/>
+</g>
+<!-- delete_post -->
+<g id="program~~fblog~~CallsGraph_node6" class="node"><title>delete_post</title>
+<polygon fill="#777777" stroke="#777777" points="160,-570 92,-570 92,-546 160,-546 160,-570"/>
+<text text-anchor="middle" x="126" y="-555.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">delete_post</text>
+</g>
+<!-- program~fblog&#45;&gt;delete_post -->
+<g id="program~~fblog~~CallsGraph_edge5" class="edge"><title>program~fblog&#45;&gt;delete_post</title>
+<path fill="none" stroke="black" d="M29.6941,-381.372C34.3409,-411.24 49.7318,-488.404 90,-537 90.7008,-537.846 91.4451,-538.666 92.2249,-539.461"/>
+<polygon fill="black" stroke="black" points="90.0687,-542.22 99.9939,-545.927 94.5467,-536.84 90.0687,-542.22"/>
+</g>
+<!-- list_css -->
+<g id="program~~fblog~~CallsGraph_node7" class="node"><title>list_css</title>
+<polygon fill="#777777" stroke="#777777" points="153,-528 99,-528 99,-504 153,-504 153,-528"/>
+<text text-anchor="middle" x="126" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">list_css</text>
+</g>
+<!-- program~fblog&#45;&gt;list_css -->
+<g id="program~~fblog~~CallsGraph_edge6" class="edge"><title>program~fblog&#45;&gt;list_css</title>
+<path fill="none" stroke="black" d="M31.4,-381.094C38.686,-405.221 57.8097,-460.016 90,-495 90.8637,-495.939 91.7789,-496.849 92.7342,-497.731"/>
+<polygon fill="black" stroke="black" points="90.6151,-500.517 100.651,-503.913 94.9236,-495 90.6151,-500.517"/>
+</g>
+<!-- create_blog -->
+<g id="program~~fblog~~CallsGraph_node8" class="node"><title>create_blog</title>
+<polygon fill="#777777" stroke="#777777" points="160,-486 92,-486 92,-462 160,-462 160,-486"/>
+<text text-anchor="middle" x="126" y="-471.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">create_blog</text>
+</g>
+<!-- program~fblog&#45;&gt;create_blog -->
+<g id="program~~fblog~~CallsGraph_edge7" class="edge"><title>program~fblog&#45;&gt;create_blog</title>
+<path fill="none" stroke="black" d="M34.7648,-381.012C45.0126,-398.443 65.856,-431.056 90,-453 91.1143,-454.013 92.2849,-455.002 93.4945,-455.965"/>
+<polygon fill="black" stroke="black" points="91.6841,-458.972 101.866,-461.901 95.7334,-453.262 91.6841,-458.972"/>
+</g>
+<!-- delete_css -->
+<g id="program~~fblog~~CallsGraph_node9" class="node"><title>delete_css</title>
+<polygon fill="#777777" stroke="#777777" points="158,-444 94,-444 94,-420 158,-420 158,-444"/>
+<text text-anchor="middle" x="126" y="-429.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">delete_css</text>
+</g>
+<!-- program~fblog&#45;&gt;delete_css -->
+<g id="program~~fblog~~CallsGraph_edge8" class="edge"><title>program~fblog&#45;&gt;delete_css</title>
+<path fill="none" stroke="black" d="M45.2018,-381.025C57.5517,-389.567 74.6556,-401.21 90,-411 91.893,-412.208 93.8536,-413.438 95.836,-414.667"/>
+<polygon fill="black" stroke="black" points="94.1669,-417.749 104.526,-419.973 97.8144,-411.774 94.1669,-417.749"/>
+</g>
+<!-- init_conf -->
+<g id="program~~fblog~~CallsGraph_node10" class="node"><title>init_conf</title>
+<polygon fill="#777777" stroke="#777777" points="153,-402 99,-402 99,-378 153,-378 153,-402"/>
+<text text-anchor="middle" x="126" y="-387.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">init_conf</text>
+</g>
+<!-- program~fblog&#45;&gt;init_conf -->
+<g id="program~~fblog~~CallsGraph_edge9" class="edge"><title>program~fblog&#45;&gt;init_conf</title>
+<path fill="none" stroke="black" d="M54.2496,-374.683C64.9249,-376.994 77.4364,-379.703 88.9451,-382.194"/>
+<polygon fill="black" stroke="black" points="88.2152,-385.617 98.7294,-384.313 89.6964,-378.776 88.2152,-385.617"/>
+</g>
+<!-- config -->
+<g id="program~~fblog~~CallsGraph_node11" class="node"><title>config</title>
+<polygon fill="#777777" stroke="#777777" points="153,-360 99,-360 99,-336 153,-336 153,-360"/>
+<text text-anchor="middle" x="126" y="-345.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">config</text>
+</g>
+<!-- program~fblog&#45;&gt;config -->
+<g id="program~~fblog~~CallsGraph_edge10" class="edge"><title>program~fblog&#45;&gt;config</title>
+<path fill="none" stroke="black" d="M54.2496,-363.317C64.9249,-361.006 77.4364,-358.297 88.9451,-355.806"/>
+<polygon fill="black" stroke="black" points="89.6964,-359.224 98.7294,-353.687 88.2152,-352.383 89.6964,-359.224"/>
+</g>
+<!-- terminate -->
+<g id="program~~fblog~~CallsGraph_node12" class="node"><title>terminate</title>
+<polygon fill="#777777" stroke="#777777" points="154.5,-318 97.5,-318 97.5,-294 154.5,-294 154.5,-318"/>
+<text text-anchor="middle" x="126" y="-303.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">terminate</text>
+</g>
+<!-- program~fblog&#45;&gt;terminate -->
+<g id="program~~fblog~~CallsGraph_edge11" class="edge"><title>program~fblog&#45;&gt;terminate</title>
+<path fill="none" stroke="black" d="M45.2018,-356.975C57.5517,-348.433 74.6556,-336.79 90,-327 91.893,-325.792 93.8536,-324.562 95.836,-323.333"/>
+<polygon fill="black" stroke="black" points="97.8144,-326.226 104.526,-318.027 94.1669,-320.251 97.8144,-326.226"/>
+</g>
+<!-- list_posts -->
+<g id="program~~fblog~~CallsGraph_node13" class="node"><title>list_posts</title>
+<polygon fill="#777777" stroke="#777777" points="154.5,-276 97.5,-276 97.5,-252 154.5,-252 154.5,-276"/>
+<text text-anchor="middle" x="126" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">list_posts</text>
+</g>
+<!-- program~fblog&#45;&gt;list_posts -->
+<g id="program~~fblog~~CallsGraph_edge12" class="edge"><title>program~fblog&#45;&gt;list_posts</title>
+<path fill="none" stroke="black" d="M34.7648,-356.988C45.0126,-339.557 65.856,-306.944 90,-285 91.1143,-283.987 92.2849,-282.998 93.4945,-282.035"/>
+<polygon fill="black" stroke="black" points="95.7334,-284.738 101.866,-276.099 91.6841,-279.028 95.7334,-284.738"/>
+</g>
+<!-- list_pages -->
+<g id="program~~fblog~~CallsGraph_node14" class="node"><title>list_pages</title>
+<polygon fill="#777777" stroke="#777777" points="156.5,-234 95.5,-234 95.5,-210 156.5,-210 156.5,-234"/>
+<text text-anchor="middle" x="126" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">list_pages</text>
+</g>
+<!-- program~fblog&#45;&gt;list_pages -->
+<g id="program~~fblog~~CallsGraph_edge13" class="edge"><title>program~fblog&#45;&gt;list_pages</title>
+<path fill="none" stroke="black" d="M31.4,-356.906C38.686,-332.779 57.8097,-277.984 90,-243 90.8637,-242.061 91.7789,-241.151 92.7342,-240.269"/>
+<polygon fill="black" stroke="black" points="94.9236,-243 100.651,-234.087 90.6151,-237.483 94.9236,-243"/>
+</g>
+<!-- edit_css -->
+<g id="program~~fblog~~CallsGraph_node15" class="node"><title>edit_css</title>
+<polygon fill="#777777" stroke="#777777" points="153,-192 99,-192 99,-168 153,-168 153,-192"/>
+<text text-anchor="middle" x="126" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">edit_css</text>
+</g>
+<!-- program~fblog&#45;&gt;edit_css -->
+<g id="program~~fblog~~CallsGraph_edge14" class="edge"><title>program~fblog&#45;&gt;edit_css</title>
+<path fill="none" stroke="black" d="M29.6941,-356.628C34.3409,-326.76 49.7318,-249.596 90,-201 90.7008,-200.154 91.4451,-199.334 92.2249,-198.539"/>
+<polygon fill="black" stroke="black" points="94.5467,-201.16 99.9939,-192.073 90.0687,-195.78 94.5467,-201.16"/>
+</g>
+<!-- add_post -->
+<g id="program~~fblog~~CallsGraph_node16" class="node"><title>add_post</title>
+<polygon fill="#777777" stroke="#777777" points="154.5,-150 97.5,-150 97.5,-126 154.5,-126 154.5,-150"/>
+<text text-anchor="middle" x="126" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">add_post</text>
+</g>
+<!-- program~fblog&#45;&gt;add_post -->
+<g id="program~~fblog~~CallsGraph_edge15" class="edge"><title>program~fblog&#45;&gt;add_post</title>
+<path fill="none" stroke="black" d="M28.5844,-356.717C30.8187,-322.038 41.368,-221.826 90,-159 90.5693,-158.265 91.1722,-157.549 91.8038,-156.854"/>
+<polygon fill="black" stroke="black" points="94.2237,-159.387 99.4433,-150.168 89.6133,-154.12 94.2237,-159.387"/>
+</g>
+<!-- console -->
+<g id="program~~fblog~~CallsGraph_node17" class="node"><title>console</title>
+<polygon fill="#777777" stroke="#777777" points="153,-108 99,-108 99,-84 153,-84 153,-108"/>
+<text text-anchor="middle" x="126" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">console</text>
+</g>
+<!-- program~fblog&#45;&gt;console -->
+<g id="program~~fblog~~CallsGraph_edge16" class="edge"><title>program~fblog&#45;&gt;console</title>
+<path fill="none" stroke="black" d="M27.836,-356.869C27.9111,-317.971 32.8786,-194.395 90,-117 90.5523,-116.252 91.14,-115.525 91.7579,-114.819"/>
+<polygon fill="black" stroke="black" points="94.1887,-117.341 99.3066,-108.064 89.5207,-112.125 94.1887,-117.341"/>
+</g>
+<!-- update -->
+<g id="program~~fblog~~CallsGraph_node18" class="node"><title>update</title>
+<polygon fill="#777777" stroke="#777777" points="153,-66 99,-66 99,-42 153,-42 153,-66"/>
+<text text-anchor="middle" x="126" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">update</text>
+</g>
+<!-- program~fblog&#45;&gt;update -->
+<g id="program~~fblog~~CallsGraph_edge17" class="edge"><title>program~fblog&#45;&gt;update</title>
+<path fill="none" stroke="black" d="M29.2479,-356.984C34.5487,-307.779 56.4744,-122.049 90,-75 90.4472,-74.3724 90.9196,-73.7602 91.4142,-73.1633"/>
+<polygon fill="black" stroke="black" points="93.9132,-75.619 98.8559,-66.2477 89.148,-70.4912 93.9132,-75.619"/>
+</g>
+<!-- edit_page -->
+<g id="program~~fblog~~CallsGraph_node19" class="node"><title>edit_page</title>
+<polygon fill="#777777" stroke="#777777" points="156,-24 96,-24 96,-0 156,-0 156,-24"/>
+<text text-anchor="middle" x="126" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">edit_page</text>
+</g>
+<!-- program~fblog&#45;&gt;edit_page -->
+<g id="program~~fblog~~CallsGraph_edge18" class="edge"><title>program~fblog&#45;&gt;edit_page</title>
+<path fill="none" stroke="black" d="M28.9174,-356.763C33.1504,-302.933 52.2203,-87.4683 90,-33 90.4392,-32.3668 90.9043,-31.7495 91.3922,-31.1478"/>
+<polygon fill="black" stroke="black" points="93.897,-33.5967 98.7794,-24.1939 89.099,-28.4997 93.897,-33.5967"/>
+</g>
+</g>
+</svg>
+</div>
+                <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+                <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                      </div>
+                      <div class="modal-body">
+                        
+Nodes of different colours represent the following:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="641pt" height="26pt"
+ viewBox="0.00 0.00 641.00 26.18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(0.818124 0.818124) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-28 779.5,-28 779.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node"><title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,-0 54,-0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node"><title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="136,-24 72,-24 72,-0 136,-0 136,-24"/>
+<text text-anchor="middle" x="104" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Type -->
+<g id="node3" class="node"><title>Type</title>
+<polygon fill="#5cb85c" stroke="#5cb85c" points="208,-24 154,-24 154,-0 208,-0 208,-24"/>
+<text text-anchor="middle" x="181" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type</text>
+</g>
+<!-- Subroutine -->
+<g id="node4" class="node"><title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="288,-24 226,-24 226,-0 288,-0 288,-24"/>
+<text text-anchor="middle" x="257" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node5" class="node"><title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="360,-24 306,-24 306,-0 360,-0 360,-24"/>
+<text text-anchor="middle" x="333" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node6" class="node"><title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="433.5,-24 378.5,-24 378.5,-0 433.5,-0 433.5,-24"/>
+<text text-anchor="middle" x="406" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node7" class="node"><title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="588,-24 452,-24 452,-0 588,-0 588,-24"/>
+<text text-anchor="middle" x="520" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node8" class="node"><title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="660,-24 606,-24 606,-0 660,-0 660,-24"/>
+<text text-anchor="middle" x="633" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node9" class="node"><title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="775.5,-24 678.5,-24 678.5,-0 775.5,-0 775.5,-24"/>
+<text text-anchor="middle" x="727" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<h5>Module Graph</h5>
+<p>Solid arrows point from a parent (sub)module to the submodule which is
+descended from it. Dashed arrows point from a module being used to the
+module using it.</p>
+<h5>Type Graph</h5>
+<p>Solid arrows point from one derived type to another which extends
+(inherits from) it. Dashed arrows point from a derived type to another
+type containing it as a components, with a label listing the name(s) of
+said component(s).</p>
+<h5>Call Graph</h5>
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+     
+    <br>
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-css_2_delete%7E2"></span>character(len=512)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>css_2_delete</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-css_2_edit%7E2"></span>character(len=512)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>css_2_edit</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-page_2_edit%7E2"></span>character(len=512)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>page_2_edit</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-page_2_delete%7E2"></span>character(len=512)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>page_2_delete</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-arg"></span>character(len=80)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>arg</strong>(0:2)</td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-char_rank"></span>character(len=80)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>char_rank</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-argc"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>argc</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i%7E8"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ios%7E14"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ios</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-len_path"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>len_path</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rank_val%7E2"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>rank_val</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-config_has_been_recorded%7E2"></span>logical</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>config_has_been_recorded</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-css_has_been_recorded%7E2"></span>logical</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>css_has_been_recorded</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-file_exist%7E8"></span>logical</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>file_exist</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-page_has_been_recorded%7E2"></span>logical</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>page_has_been_recorded</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-post_has_been_recorded%7E2"></span>logical</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>post_has_been_recorded</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+    <section>
+    <h2 id="src">Source Code</h2>
+    <div class="highlight"><pre><span></span><span class="k">program </span><span class="n">fblog</span>
+  <span class="c">!</span>
+  <span class="k">use</span> <span class="kd">::</span> <span class="n">fblog_m</span><span class="p">,</span> <span class="n">only</span><span class="p">:</span> <span class="n">config_file</span><span class="p">,</span> <span class="n">bad_argument</span><span class="p">,</span> <span class="n">deleted</span><span class="p">,</span> <span class="n">deleted_file</span><span class="p">,</span> <span class="n">deleted_you_could_update_the_config</span><span class="p">,</span> <span class="n">fblog_dir</span><span class="p">,</span> <span class="n">i18n</span><span class="p">,&amp;</span>
+       <span class="p">&amp;</span> <span class="n">is_a_wrong_argument</span><span class="p">,</span> <span class="n">init_conf</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">no_fblog_directory_at</span><span class="p">,</span> <span class="n">no_fblog_directory_here</span><span class="p">,</span> <span class="n">not_modified</span><span class="p">,</span> <span class="n">now_you_should_update</span><span class="p">&amp;</span>
+       <span class="p">&amp;,</span> <span class="n">post_amount</span><span class="p">,</span> <span class="n">show_version</span><span class="p">,</span> <span class="n">terminate</span><span class="p">,</span> <span class="n">there_is_not_directory</span><span class="p">,</span> <span class="n">too_much_arguments</span><span class="p">,</span> <span class="n">update</span>
+  <span class="k">use</span> <span class="kd">::</span> <span class="n">io_m</span><span class="p">,</span> <span class="n">only</span><span class="p">:</span> <span class="n">add_post</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="n">create_blog</span><span class="p">,</span> <span class="n">delete_css</span><span class="p">,</span> <span class="n">delete_page</span><span class="p">,</span> <span class="n">delete_post</span><span class="p">,</span> <span class="n">edit_css</span><span class="p">,</span> <span class="n">edit_page</span><span class="p">,</span> <span class="n">edit_post</span><span class="p">,</span> <span class="n">help</span><span class="p">,&amp;</span>
+       <span class="p">&amp;</span> <span class="n">list_css</span><span class="p">,</span> <span class="n">list_pages</span><span class="p">,</span> <span class="n">list_posts</span>
+  <span class="k">use</span> <span class="kd">::</span> <span class="n">tty_m</span><span class="p">,</span> <span class="n">only</span><span class="p">:</span> <span class="n">console</span>
+  <span class="c">!</span>
+  <span class="k">implicit none</span>
+  <span class="c">!</span>
+  <span class="kt">logical</span> <span class="kd">::</span> <span class="n">config_has_been_recorded</span><span class="p">,</span> <span class="n">css_has_been_recorded</span><span class="p">,</span> <span class="n">file_exist</span><span class="p">,</span> <span class="n">page_has_been_recorded</span><span class="p">,</span> <span class="n">post_has_been_recorded</span>
+  <span class="kt">integer</span> <span class="kd">::</span> <span class="n">argc</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">ios</span><span class="p">,</span> <span class="n">len_path</span><span class="p">,</span> <span class="n">rank_val</span>
+  <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>  <span class="kd">::</span> <span class="n">arg</span><span class="p">(</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">),</span> <span class="n">char_rank</span>
+  <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span> <span class="kd">::</span> <span class="n">css_2_delete</span><span class="p">,</span> <span class="n">css_2_edit</span><span class="p">,</span> <span class="n">page_2_edit</span><span class="p">,</span> <span class="n">page_2_delete</span>
+  <span class="c">!</span>
+  <span class="n">argc</span> <span class="o">=</span> <span class="nb">command_argument_count</span><span class="p">()</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1091</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">too_much_arguments</span><span class="p">))</span>
+  <span class="k">do </span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">argc</span>
+     <span class="k">call </span><span class="nb">get_command_argument</span><span class="p">(</span><span class="n">number</span> <span class="o">=</span> <span class="n">i</span><span class="p">,</span> <span class="k">value</span> <span class="o">=</span> <span class="n">arg</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+  <span class="k">end do</span>
+<span class="k">  if</span><span class="p">(</span><span class="n">argc</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">     </span><span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+     <span class="k">call </span><span class="n">console</span><span class="p">()</span>
+  <span class="k">end if</span>
+<span class="k">  if</span><span class="p">(</span><span class="n">argc</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="p">)</span> <span class="o">/=</span> <span class="s1">&#39;-&#39;</span><span class="p">))</span> <span class="k">then</span>
+<span class="k">     </span><span class="n">path</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+     <span class="n">len_path</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+     <span class="k">if</span><span class="p">(</span><span class="n">path</span><span class="p">(</span><span class="n">len_path</span><span class="p">:</span><span class="n">len_path</span><span class="p">)</span> <span class="o">/=</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="n">path</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="s1">&#39;/&#39;</span>
+     <span class="k">inquire</span><span class="p">(</span><span class="k">file</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">exist</span> <span class="o">=</span> <span class="n">file_exist</span><span class="p">)</span>
+     <span class="k">if</span> <span class="p">(.</span><span class="nb">not</span><span class="p">.</span> <span class="n">file_exist</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1092</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">there_is_not_directory</span><span class="p">)</span> <span class="o">//</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span> <span class="n">path</span><span class="p">(:</span><span class="nb">len</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+     <span class="k">call </span><span class="n">console</span><span class="p">()</span>
+  <span class="k">end if</span>
+<span class="k">  if</span><span class="p">(</span><span class="n">argc</span> <span class="o">==</span> <span class="mi">2</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">2</span><span class="p">)(</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span><span class="p">))</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1093</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">bad_argument</span><span class="p">)</span> <span class="o">//</span> <span class="s1">&#39;&quot;&#39;</span> <span class="o">//</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="p">&amp;</span>
+       <span class="p">&amp;</span><span class="o">//</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">argc</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">     </span><span class="n">path</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+     <span class="n">len_path</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+     <span class="k">if</span><span class="p">(</span><span class="n">path</span><span class="p">(</span><span class="n">len_path</span><span class="p">:</span><span class="n">len_path</span><span class="p">)</span> <span class="o">/=</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="n">path</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="s1">&#39;/&#39;</span>
+     <span class="k">inquire</span><span class="p">(</span><span class="k">file</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">exist</span> <span class="o">=</span> <span class="n">file_exist</span><span class="p">)</span>
+     <span class="k">if</span> <span class="p">(.</span><span class="nb">not</span><span class="p">.</span> <span class="n">file_exist</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1094</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">there_is_not_directory</span><span class="p">)</span> <span class="o">//</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span> <span class="n">path</span><span class="p">)</span>
+  <span class="k">end if</span>
+<span class="k">  select case</span> <span class="p">(</span><span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)))</span>
+  <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-h&#39;</span><span class="p">,</span> <span class="s1">&#39;-help&#39;</span><span class="p">,</span> <span class="s1">&#39;--help&#39;</span><span class="p">,</span> <span class="s1">&#39;-?&#39;</span><span class="p">,</span> <span class="s1">&#39;?&#39;</span><span class="p">)</span>
+     <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">help</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-v&#39;</span><span class="p">,</span> <span class="s1">&#39;--version&#39;</span><span class="p">)</span>
+     <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">show_version</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">end select</span>
+<span class="k">  inquire</span><span class="p">(</span><span class="k">file</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="n">config_file</span><span class="p">,</span> <span class="n">exist</span> <span class="o">=</span> <span class="n">file_exist</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">file_exist</span><span class="p">)</span> <span class="k">call </span><span class="n">init_conf</span><span class="p">()</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;--create&#39;</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">     call </span><span class="n">create_blog</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">end if</span>
+<span class="k">  inquire</span><span class="p">(</span><span class="k">file</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="n">fblog_dir</span> <span class="o">//</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">exist</span> <span class="o">=</span> <span class="n">file_exist</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">((.</span><span class="nb">not</span><span class="p">.</span> <span class="n">file_exist</span><span class="p">)</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">))</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1095</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">no_fblog_directory_at</span><span class="p">)</span> <span class="o">//</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span><span class="p">&amp;</span>
+       <span class="p">&amp;</span> <span class="n">path</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">((.</span><span class="nb">not</span><span class="p">.</span> <span class="n">file_exist</span><span class="p">)</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">))</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1096</span><span class="p">,</span> <span class="n">inf_msg</span>    <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">no_fblog_directory_here</span><span class="p">))</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">1</span><span class="p">:</span><span class="mi">12</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;--edit-post=&#39;</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">     </span><span class="n">char_rank</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">13</span><span class="p">:))</span>
+     <span class="k">read</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="n">char_rank</span><span class="p">,</span> <span class="n">fmt</span> <span class="o">=</span> <span class="o">*</span><span class="p">,</span> <span class="n">iostat</span> <span class="o">=</span> <span class="n">ios</span><span class="p">)</span> <span class="n">rank_val</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">ios</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1097</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">char_rank</span><span class="p">)</span> <span class="o">//</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span> <span class="n">i18n</span><span class="p">(</span><span class="n">is_a_wrong_argument</span><span class="p">))</span>
+     <span class="k">call </span><span class="n">edit_post</span><span class="p">(</span><span class="n">rank</span> <span class="o">=</span> <span class="n">rank_val</span><span class="p">,</span> <span class="n">recorded</span> <span class="o">=</span> <span class="n">post_has_been_recorded</span><span class="p">)</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">post_has_been_recorded</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">        call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">now_you_should_update</span><span class="p">))</span>
+     <span class="k">else</span>
+<span class="k">        call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">now_you_should_update</span><span class="p">))</span>
+     <span class="k">end if</span>
+<span class="k">  end if</span>
+<span class="k">  if</span> <span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">1</span><span class="p">:</span><span class="mi">11</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;--edit-css=&#39;</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">     </span><span class="n">css_2_edit</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">12</span><span class="p">:))</span>
+     <span class="k">call </span><span class="n">edit_css</span><span class="p">(</span><span class="n">css2edit</span> <span class="o">=</span> <span class="n">css_2_edit</span><span class="p">,</span> <span class="n">recorded</span> <span class="o">=</span> <span class="n">css_has_been_recorded</span><span class="p">)</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">css_has_been_recorded</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">        call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">now_you_should_update</span><span class="p">))</span>
+     <span class="k">else</span>
+<span class="k">        call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">not_modified</span><span class="p">))</span>
+     <span class="k">end if</span>
+<span class="k">  end if</span>
+<span class="k">  if</span> <span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">1</span><span class="p">:</span><span class="mi">12</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;--edit-page=&#39;</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">     </span><span class="n">page_2_edit</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">13</span><span class="p">:))</span>
+     <span class="k">call </span><span class="n">edit_page</span><span class="p">(</span><span class="n">page2edit</span> <span class="o">=</span> <span class="n">page_2_edit</span><span class="p">,</span> <span class="n">recorded</span> <span class="o">=</span> <span class="n">page_has_been_recorded</span><span class="p">)</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">page_has_been_recorded</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">        call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">now_you_should_update</span><span class="p">))</span>
+     <span class="k">else</span>
+<span class="k">        call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">not_modified</span><span class="p">))</span>
+     <span class="k">end if</span>
+<span class="k">  end if</span>
+<span class="k">  if</span> <span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">1</span><span class="p">:</span><span class="mi">14</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;--delete-post=&#39;</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">     </span><span class="n">char_rank</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">15</span><span class="p">:))</span>
+     <span class="k">read</span><span class="p">(</span><span class="n">unit</span> <span class="o">=</span> <span class="n">char_rank</span><span class="p">,</span> <span class="n">fmt</span> <span class="o">=</span> <span class="o">*</span><span class="p">,</span> <span class="n">iostat</span> <span class="o">=</span> <span class="n">ios</span><span class="p">)</span> <span class="n">rank_val</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">ios</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1098</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">char_rank</span><span class="p">)</span> <span class="o">//</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span> <span class="n">i18n</span><span class="p">(</span><span class="n">is_a_wrong_argument</span><span class="p">))</span>
+     <span class="k">call </span><span class="n">delete_post</span><span class="p">(</span><span class="n">rank</span> <span class="o">=</span> <span class="n">rank_val</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">deleted_file</span><span class="p">)</span> <span class="o">//</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span> <span class="nb">trim</span><span class="p">(</span><span class="n">char_rank</span><span class="p">)</span> <span class="o">//</span> <span class="nb">new_line</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">//</span><span class="p">&amp;</span>
+          <span class="p">&amp;</span> <span class="n">i18n</span><span class="p">(</span><span class="n">now_you_should_update</span><span class="p">))</span>
+  <span class="k">end if</span>
+<span class="k">  if</span> <span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">1</span><span class="p">:</span><span class="mi">14</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;--delete-page=&quot;</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">     </span><span class="n">page_2_delete</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">15</span><span class="p">:))</span>
+     <span class="k">call </span><span class="n">delete_page</span><span class="p">(</span><span class="n">page2delete</span> <span class="o">=</span> <span class="n">page_2_delete</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="s1">&#39;Page &#39;</span> <span class="o">//</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">15</span><span class="p">:))</span> <span class="o">//</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span> <span class="n">i18n</span><span class="p">(</span><span class="n">deleted_you_could_update_the_config</span><span class="p">))</span>
+  <span class="k">end if</span>
+<span class="k">  if</span> <span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">1</span><span class="p">:</span><span class="mi">13</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;--delete-css=&quot;</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">     </span><span class="n">css_2_delete</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">14</span><span class="p">:))</span>
+     <span class="k">call </span><span class="n">delete_css</span><span class="p">(</span><span class="n">css2delete</span> <span class="o">=</span> <span class="n">css_2_delete</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="s1">&#39;Css &#39;</span> <span class="o">//</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">14</span><span class="p">:))</span> <span class="o">//</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span><span class="n">i18n</span><span class="p">(</span><span class="n">deleted</span><span class="p">))</span>
+  <span class="k">end if</span>
+<span class="k">  select case</span> <span class="p">(</span><span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)))</span>
+  <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-L&#39;</span><span class="p">,</span> <span class="s1">&#39;--list-all&#39;</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">list_posts</span><span class="p">()</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-l&#39;</span><span class="p">,</span> <span class="s1">&#39;--list-last&#39;</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">list_posts</span><span class="p">(</span><span class="n">limit</span> <span class="o">=</span> <span class="n">post_amount</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-u&#39;</span><span class="p">,</span> <span class="s1">&#39;--update&#39;</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">update</span><span class="p">()</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;-a&#39;</span><span class="p">,</span> <span class="s1">&#39;--add-post&#39;</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">add_post</span><span class="p">(</span><span class="n">recorded</span> <span class="o">=</span> <span class="n">post_has_been_recorded</span><span class="p">)</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">post_has_been_recorded</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">        call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span>  <span class="n">i18n</span><span class="p">(</span><span class="n">now_you_should_update</span><span class="p">))</span>
+     <span class="k">else</span>
+<span class="k">        call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">not_modified</span><span class="p">))</span>
+     <span class="k">end if</span>
+<span class="k">  case</span> <span class="p">(</span><span class="s1">&#39;-c&#39;</span><span class="p">,</span> <span class="s1">&#39;--config&#39;</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">config</span><span class="p">(</span><span class="n">recorded</span> <span class="o">=</span> <span class="n">config_has_been_recorded</span><span class="p">)</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">config_has_been_recorded</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">        call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">now_you_should_update</span><span class="p">))</span>
+     <span class="k">else</span>
+<span class="k">        call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">not_modified</span><span class="p">))</span>
+     <span class="k">end if</span>
+<span class="k">  case</span> <span class="p">(</span><span class="s1">&#39;--list-css&#39;</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">list_css</span><span class="p">()</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;--list-pages&#39;</span><span class="p">)</span>
+     <span class="k">call </span><span class="n">list_pages</span><span class="p">()</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">case </span><span class="n">default</span>
+     <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1099</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">bad_argument</span><span class="p">)</span> <span class="o">//</span> <span class="s1">&#39; &quot;&#39;</span> <span class="o">//</span> <span class="nb">trim</span><span class="p">(</span><span class="n">arg</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="o">//</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+  <span class="k">end select</span>
+<span class="k">  error stop</span> <span class="s1">&#39;Internal error in Main&#39;</span>
+<span class="k">end program </span><span class="n">fblog</span>
+</pre></div>
+
+    </section>
+    
+    
+    </div>
+  </div>
+
+    <hr>
+    <footer>
+        <div class="row">
+        <div class="col-md-4">&copy; 2016 <a rel="license" href="http://www.gnu.org/licenses/old-licenses/fdl-1.2.en.html">GNU Free Documentation License</a></div>
+	<div class="col-md-4"><span class="text-center"> fBlog was developed by Denis BERNARD</span></div>
+        <div class="col-md-4"><span class="pull-right">Documentation generated by <a href="https://github.com/cmacmackin/ford">FORD</a></span></div>
+        </div>
+        <br>
+    </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js'],
+        'HTML-CSS': { 
+           styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: '#000000 ! important'} }
+        }
+      });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	 <meta name="description" content="Stand-alone static site generator for Linux console">
+    
+    <meta name="author" content="Chris MacMackin" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>update &ndash; fBlog</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">fBlog </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+				
+                
+            <li><a href="../lists/files.html">Source Files</a></li>
+				
+				
+            <li><a href="../lists/modules.html">Modules</a></li>
+				
+				
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+				
+								
+            <li><a href="../lists/types.html">Derived Types</a></li>
+				
+				
+            <li><a href="../program/fblog.html">Program</a></li>
+				
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>update
+    <small>Subroutine</small>
+    
+    </h1>
+	 
+<div class="row">
+<div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+    <li><i class="fa fa-code"></i><a href="../src/mod_fblog.f08"> Source File</a></li>
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+     <li><a href='../sourcefile/mod_fblog.f08.html'>mod_fblog.f08</a></li>
+  
+     <li><a href='../module/fblog_m.html'>fblog_m</a></li>
+  
+     <li class="active">update</li>
+  </ol>
+</div>
+</div>
+</div>
+    
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-3">
+    
+<div id="sidebar">
+  
+  
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars">Variables</a></h3></div>
+    <div id="vars" class="panel-collapse collapse">
+      <div class="list-group">
+        
+        <a class="list-group-item" href="../proc/update.html#variable-command_msg%7E2">command_msg</a>
+        
+        <a class="list-group-item" href="../proc/update.html#variable-command_status%7E2">command_status</a>
+        
+        <a class="list-group-item" href="../proc/update.html#variable-count_archive_pages">count_archive_pages</a>
+        
+        <a class="list-group-item" href="../proc/update.html#variable-count_css">count_css</a>
+        
+        <a class="list-group-item" href="../proc/update.html#variable-count_pages">count_pages</a>
+        
+        <a class="list-group-item" href="../proc/update.html#variable-exit_status%7E2">exit_status</a>
+        
+        <a class="list-group-item" href="../proc/update.html#variable-file_exist%7E2">file_exist</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+    <div class="list-group">
+      <a class="list-group-item" href="../proc/update.html#src">update</a>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#allprocs">All Procedures</a></h3></div>
+    <div id="allprocs" class="panel-collapse collapse">
+        <div class="list-group">
+          
+          <a class="list-group-item" href="../proc/add_post.html">add_post</a>
+          
+          <a class="list-group-item" href="../proc/clock.html">clock</a>
+          
+          <a class="list-group-item" href="../proc/config.html">config</a>
+          
+          <a class="list-group-item" href="../proc/console.html">console</a>
+          
+          <a class="list-group-item" href="../proc/console_menu.html">console_menu</a>
+          
+          <a class="list-group-item" href="../proc/create_blog.html">create_blog</a>
+          
+          <a class="list-group-item" href="../proc/delete_css.html">delete_css</a>
+          
+          <a class="list-group-item" href="../proc/delete_page.html">delete_page</a>
+          
+          <a class="list-group-item" href="../proc/delete_post.html">delete_post</a>
+          
+          <a class="list-group-item" href="../proc/edit_css.html">edit_css</a>
+          
+          <a class="list-group-item" href="../proc/edit_page.html">edit_page</a>
+          
+          <a class="list-group-item" href="../proc/edit_post.html">edit_post</a>
+          
+          <a class="list-group-item" href="../proc/html_home.html">html_home</a>
+          
+          <a class="list-group-item" href="../proc/html_month_archive.html">html_month_archive</a>
+          
+          <a class="list-group-item" href="../proc/html_page.html">html_page</a>
+          
+          <a class="list-group-item" href="../proc/html_permalink.html">html_permalink</a>
+          
+          <a class="list-group-item" href="../proc/html_year_archive.html">html_year_archive</a>
+          
+          <a class="list-group-item" href="../proc/i18n.html">i18n</a>
+          
+          <a class="list-group-item" href="../proc/init_conf.html">init_conf</a>
+          
+          <a class="list-group-item" href="../proc/init_data.html">init_data</a>
+          
+          <a class="list-group-item" href="../proc/list_css.html">list_css</a>
+          
+          <a class="list-group-item" href="../proc/list_pages.html">list_pages</a>
+          
+          <a class="list-group-item" href="../proc/list_posts.html">list_posts</a>
+          
+          <a class="list-group-item" href="../proc/menu_css.html">menu_css</a>
+          
+          <a class="list-group-item" href="../proc/menu_main.html">menu_main</a>
+          
+          <a class="list-group-item" href="../proc/menu_page.html">menu_page</a>
+          
+          <a class="list-group-item" href="../proc/menu_post.html">menu_post</a>
+          
+          <a class="list-group-item" href="../proc/terminate.html">terminate</a>
+          
+          <a class="list-group-item" href="../proc/update.html">update</a>
+          
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+    </div>
+    
+    <div class="col-lg-9" id='text'>
+    <h2>
+public subroutine update()
+    
+    
+    
+</h2>
+    
+  
+
+
+
+    <h3>Arguments</h3>
+    
+      <em>None</em>
+    
+    
+    
+    <h3>Description</h3>
+    <p>Build all pages of the blog. The most important procedure of the project!
+ This procedure could be called from an other program by including in it module fblog_m.</p>
+    
+    
+     <h3>Calls</h3>
+     
+                <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: proc~~update~~CallsGraph Pages: 1 -->
+<svg id="procupdateCallsGraph" width="389pt" height="398pt"
+ viewBox="0.00 0.00 389.00 398.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~update~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 394.253)">
+<title>proc~~update~~CallsGraph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-394.253 385,-394.253 385,4 -4,4"/>
+<!-- proc~update -->
+<g id="proc~~update~~CallsGraph_node1" class="node"><title>proc~update</title>
+<polygon fill="none" stroke="black" points="54,-204.253 0,-204.253 0,-180.253 54,-180.253 54,-204.253"/>
+<text text-anchor="middle" x="27" y="-189.853" font-family="Helvetica,sans-Serif" font-size="10.50">update</text>
+</g>
+<!-- proc~terminate -->
+<g id="proc~~update~~CallsGraph_node2" class="node"><title>proc~terminate</title>
+<g id="a_proc~~update~~CallsGraph_node2"><a xlink:href="../proc/terminate.html" xlink:title="terminate">
+<polygon fill="#d9534f" stroke="#d9534f" points="291,-184.253 234,-184.253 234,-160.253 291,-160.253 291,-184.253"/>
+<text text-anchor="middle" x="262.5" y="-169.853" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">terminate</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~terminate -->
+<g id="proc~~update~~CallsGraph_edge10" class="edge"><title>proc~update&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M54.1254,-195.061C87.6765,-198.061 147.59,-201.372 198,-193.253 206.652,-191.859 215.721,-189.463 224.209,-186.775"/>
+<polygon fill="black" stroke="black" points="225.488,-190.038 233.848,-183.529 223.254,-183.404 225.488,-190.038"/>
+</g>
+<!-- proc~html_home -->
+<g id="proc~~update~~CallsGraph_node3" class="node"><title>proc~html_home</title>
+<g id="a_proc~~update~~CallsGraph_node3"><a xlink:href="../proc/html_home.html" xlink:title="html_home">
+<polygon fill="#d9534f" stroke="#d9534f" points="176,-184.253 112,-184.253 112,-160.253 176,-160.253 176,-184.253"/>
+<text text-anchor="middle" x="144" y="-169.853" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">html_home</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~html_home -->
+<g id="proc~~update~~CallsGraph_edge11" class="edge"><title>proc~update&#45;&gt;proc~html_home</title>
+<path fill="none" stroke="black" d="M54.0953,-187.715C68.1205,-185.275 85.7417,-182.211 101.589,-179.455"/>
+<polygon fill="black" stroke="black" points="102.44,-182.859 111.692,-177.698 101.24,-175.963 102.44,-182.859"/>
+</g>
+<!-- proc~html_year_archive -->
+<g id="proc~~update~~CallsGraph_node4" class="node"><title>proc~html_year_archive</title>
+<g id="a_proc~~update~~CallsGraph_node4"><a xlink:href="../proc/html_year_archive.html" xlink:title="html_year_archive">
+<polygon fill="#d9534f" stroke="#d9534f" points="194,-142.253 94,-142.253 94,-118.253 194,-118.253 194,-142.253"/>
+<text text-anchor="middle" x="144" y="-127.853" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">html_year_archive</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~html_year_archive -->
+<g id="proc~~update~~CallsGraph_edge12" class="edge"><title>proc~update&#45;&gt;proc~html_year_archive</title>
+<path fill="none" stroke="black" d="M44.2687,-180.144C56.4537,-171.415 73.7527,-159.727 90,-151.253 93.2634,-149.551 96.697,-147.9 100.183,-146.322"/>
+<polygon fill="black" stroke="black" points="101.652,-149.5 109.449,-142.327 98.8806,-143.072 101.652,-149.5"/>
+</g>
+<!-- proc~clock -->
+<g id="proc~~update~~CallsGraph_node5" class="node"><title>proc~clock</title>
+<g id="a_proc~~update~~CallsGraph_node5"><a xlink:href="../proc/clock.html" xlink:title="clock">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="171,-264.253 117,-264.253 117,-240.253 171,-240.253 171,-264.253"/>
+<text text-anchor="middle" x="144" y="-249.853" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">clock</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~clock -->
+<g id="proc~~update~~CallsGraph_edge13" class="edge"><title>proc~update&#45;&gt;proc~clock</title>
+<path fill="none" stroke="black" d="M49.3907,-204.296C61.2795,-210.911 76.3807,-219.183 90,-226.253 96.0504,-229.394 102.535,-232.658 108.819,-235.769"/>
+<polygon fill="black" stroke="black" points="107.291,-238.918 117.809,-240.185 110.377,-232.635 107.291,-238.918"/>
+</g>
+<!-- proc~html_page -->
+<g id="proc~~update~~CallsGraph_node6" class="node"><title>proc~html_page</title>
+<g id="a_proc~~update~~CallsGraph_node6"><a xlink:href="../proc/html_page.html" xlink:title="html_page">
+<polygon fill="#d9534f" stroke="#d9534f" points="175,-100.253 113,-100.253 113,-76.2529 175,-76.2529 175,-100.253"/>
+<text text-anchor="middle" x="144" y="-85.8529" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">html_page</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~html_page -->
+<g id="proc~~update~~CallsGraph_edge14" class="edge"><title>proc~update&#45;&gt;proc~html_page</title>
+<path fill="none" stroke="black" d="M34.1896,-180.15C43.8587,-162.337 64.1475,-129.038 90,-109.253 94.119,-106.101 98.7726,-103.359 103.569,-100.992"/>
+<polygon fill="black" stroke="black" points="105.13,-104.129 112.867,-96.8917 102.305,-97.724 105.13,-104.129"/>
+</g>
+<!-- proc~init_conf -->
+<g id="proc~~update~~CallsGraph_node7" class="node"><title>proc~init_conf</title>
+<g id="a_proc~~update~~CallsGraph_node7"><a xlink:href="../proc/init_conf.html" xlink:title="init_conf">
+<polygon fill="#d9534f" stroke="#d9534f" points="171,-390.253 117,-390.253 117,-366.253 171,-366.253 171,-390.253"/>
+<text text-anchor="middle" x="144" y="-375.853" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">init_conf</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~init_conf -->
+<g id="proc~~update~~CallsGraph_edge15" class="edge"><title>proc~update&#45;&gt;proc~init_conf</title>
+<path fill="none" stroke="black" d="M29.2201,-204.398C32.857,-234.384 46.2525,-312.719 90,-357.253 94.8464,-362.186 100.996,-365.991 107.376,-368.916"/>
+<polygon fill="black" stroke="black" points="106.176,-372.205 116.763,-372.6 108.733,-365.689 106.176,-372.205"/>
+</g>
+<!-- proc~i18n -->
+<g id="proc~~update~~CallsGraph_node8" class="node"><title>proc~i18n</title>
+<g id="a_proc~~update~~CallsGraph_node8"><a xlink:href="../proc/i18n.html" xlink:title="i18n">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="381,-58.2529 327,-58.2529 327,-34.2529 381,-34.2529 381,-58.2529"/>
+<text text-anchor="middle" x="354" y="-43.8529" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">i18n</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~i18n -->
+<g id="proc~~update~~CallsGraph_edge16" class="edge"><title>proc~update&#45;&gt;proc~i18n</title>
+<path fill="none" stroke="black" d="M28.1857,-179.792C29.4223,-147.598 37.6957,-61.6271 90,-25.2529 158.68,22.5095 263.221,-8.56443 317.5,-30.2983"/>
+<polygon fill="black" stroke="black" points="316.452,-33.6516 327.031,-34.2267 319.119,-27.1798 316.452,-33.6516"/>
+</g>
+<!-- proc~html_permalink -->
+<g id="proc~~update~~CallsGraph_node9" class="node"><title>proc~html_permalink</title>
+<g id="a_proc~~update~~CallsGraph_node9"><a xlink:href="../proc/html_permalink.html" xlink:title="html_permalink">
+<polygon fill="#d9534f" stroke="#d9534f" points="186,-348.253 102,-348.253 102,-324.253 186,-324.253 186,-348.253"/>
+<text text-anchor="middle" x="144" y="-333.853" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">html_permalink</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~html_permalink -->
+<g id="proc~~update~~CallsGraph_edge17" class="edge"><title>proc~update&#45;&gt;proc~html_permalink</title>
+<path fill="none" stroke="black" d="M31.0206,-204.517C37.6244,-228.892 55.5821,-283.79 90,-315.253 91.3058,-316.447 92.6876,-317.576 94.1285,-318.644"/>
+<polygon fill="black" stroke="black" points="92.5703,-321.797 102.908,-324.115 96.2725,-315.856 92.5703,-321.797"/>
+</g>
+<!-- proc~init_data -->
+<g id="proc~~update~~CallsGraph_node10" class="node"><title>proc~init_data</title>
+<g id="a_proc~~update~~CallsGraph_node10"><a xlink:href="../proc/init_data.html" xlink:title="init_data">
+<polygon fill="#d9534f" stroke="#d9534f" points="171,-58.2529 117,-58.2529 117,-34.2529 171,-34.2529 171,-58.2529"/>
+<text text-anchor="middle" x="144" y="-43.8529" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">init_data</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~init_data -->
+<g id="proc~~update~~CallsGraph_edge18" class="edge"><title>proc~update&#45;&gt;proc~init_data</title>
+<path fill="none" stroke="black" d="M30.8629,-180.17C37.2786,-155.595 55.0599,-99.4008 90,-67.2529 94.9232,-62.7232 100.941,-59.1214 107.133,-56.2735"/>
+<polygon fill="black" stroke="black" points="108.879,-59.3456 116.874,-52.3934 106.289,-52.8425 108.879,-59.3456"/>
+</g>
+<!-- proc~html_month_archive -->
+<g id="proc~~update~~CallsGraph_node11" class="node"><title>proc~html_month_archive</title>
+<g id="a_proc~~update~~CallsGraph_node11"><a xlink:href="../proc/html_month_archive.html" xlink:title="html_month_archive">
+<polygon fill="#d9534f" stroke="#d9534f" points="198,-306.253 90,-306.253 90,-282.253 198,-282.253 198,-306.253"/>
+<text text-anchor="middle" x="144" y="-291.853" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">html_month_archive</text>
+</a>
+</g>
+</g>
+<!-- proc~update&#45;&gt;proc~html_month_archive -->
+<g id="proc~~update~~CallsGraph_edge19" class="edge"><title>proc~update&#45;&gt;proc~html_month_archive</title>
+<path fill="none" stroke="black" d="M34.4256,-204.348C44.2508,-221.793 64.573,-254.028 90,-273.253 91.8602,-274.659 93.827,-275.985 95.865,-277.232"/>
+<polygon fill="black" stroke="black" points="94.6797,-280.568 105.146,-282.211 97.9889,-274.4 94.6797,-280.568"/>
+</g>
+<!-- proc~terminate&#45;&gt;proc~i18n -->
+<g id="proc~~update~~CallsGraph_edge1" class="edge"><title>proc~terminate&#45;&gt;proc~i18n</title>
+<path fill="none" stroke="black" d="M272.082,-160.171C287.412,-138.589 319.657,-93.1937 338.486,-66.6865"/>
+<polygon fill="black" stroke="black" points="341.375,-68.6623 344.313,-58.4829 335.668,-64.6087 341.375,-68.6623"/>
+</g>
+<!-- proc~html_home&#45;&gt;proc~terminate -->
+<g id="proc~~update~~CallsGraph_edge2" class="edge"><title>proc~html_home&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M176.22,-172.253C190.787,-172.253 208.251,-172.253 223.572,-172.253"/>
+<polygon fill="black" stroke="black" points="223.773,-175.753 233.773,-172.253 223.773,-168.753 223.773,-175.753"/>
+</g>
+<!-- proc~html_year_archive&#45;&gt;proc~terminate -->
+<g id="proc~~update~~CallsGraph_edge3" class="edge"><title>proc~html_year_archive&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M178.384,-142.288C192.588,-147.409 209.22,-153.405 223.859,-158.683"/>
+<polygon fill="black" stroke="black" points="223.026,-162.103 233.621,-162.202 225.401,-155.518 223.026,-162.103"/>
+</g>
+<!-- proc~html_page&#45;&gt;proc~terminate -->
+<g id="proc~~update~~CallsGraph_edge4" class="edge"><title>proc~html_page&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M175.204,-97.7897C182.945,-100.876 191.043,-104.701 198,-109.253 216.08,-121.081 233.263,-138.66 245.184,-152.246"/>
+<polygon fill="black" stroke="black" points="242.734,-154.766 251.888,-160.101 248.059,-150.222 242.734,-154.766"/>
+</g>
+<!-- proc~init_conf&#45;&gt;proc~terminate -->
+<g id="proc~~update~~CallsGraph_edge5" class="edge"><title>proc~init_conf&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M171.077,-372.8C180.619,-369.654 190.825,-364.771 198,-357.253 242.172,-310.973 255.72,-232.613 259.795,-194.457"/>
+<polygon fill="black" stroke="black" points="263.289,-194.688 260.745,-184.403 256.32,-194.029 263.289,-194.688"/>
+</g>
+<!-- proc~html_permalink&#45;&gt;proc~terminate -->
+<g id="proc~~update~~CallsGraph_edge6" class="edge"><title>proc~html_permalink&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M185.523,-324.147C190.065,-321.685 194.359,-318.749 198,-315.253 233.055,-281.594 250.127,-225.14 257.23,-194.19"/>
+<polygon fill="black" stroke="black" points="260.657,-194.899 259.339,-184.386 253.814,-193.426 260.657,-194.899"/>
+</g>
+<!-- proc~init_data&#45;&gt;proc~terminate -->
+<g id="proc~~update~~CallsGraph_edge7" class="edge"><title>proc~init_data&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M171.095,-52.8303C180.313,-56.0753 190.292,-60.7334 198,-67.2529 224.921,-90.023 243.574,-127.239 253.397,-150.704"/>
+<polygon fill="black" stroke="black" points="250.206,-152.148 257.177,-160.127 256.702,-149.542 250.206,-152.148"/>
+</g>
+<!-- proc~init_data&#45;&gt;proc~i18n -->
+<g id="proc~~update~~CallsGraph_edge8" class="edge"><title>proc~init_data&#45;&gt;proc~i18n</title>
+<path fill="none" stroke="black" d="M171.343,-46.2529C208.149,-46.2529 275.103,-46.2529 316.638,-46.2529"/>
+<polygon fill="black" stroke="black" points="316.871,-49.753 326.871,-46.2529 316.871,-42.753 316.871,-49.753"/>
+</g>
+<!-- proc~html_month_archive&#45;&gt;proc~terminate -->
+<g id="proc~~update~~CallsGraph_edge9" class="edge"><title>proc~html_month_archive&#45;&gt;proc~terminate</title>
+<path fill="none" stroke="black" d="M183.969,-282.179C188.979,-279.686 193.813,-276.732 198,-273.253 223.97,-251.67 242.616,-216.615 252.734,-194"/>
+<polygon fill="black" stroke="black" points="256.05,-195.148 256.778,-184.578 249.618,-192.386 256.05,-195.148"/>
+</g>
+</g>
+</svg>
+</div>
+                <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+                <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                      </div>
+                      <div class="modal-body">
+                        
+Nodes of different colours represent the following:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="641pt" height="26pt"
+ viewBox="0.00 0.00 641.00 26.18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(0.818124 0.818124) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-28 779.5,-28 779.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node"><title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,-0 54,-0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node"><title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="136,-24 72,-24 72,-0 136,-0 136,-24"/>
+<text text-anchor="middle" x="104" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Type -->
+<g id="node3" class="node"><title>Type</title>
+<polygon fill="#5cb85c" stroke="#5cb85c" points="208,-24 154,-24 154,-0 208,-0 208,-24"/>
+<text text-anchor="middle" x="181" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type</text>
+</g>
+<!-- Subroutine -->
+<g id="node4" class="node"><title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="288,-24 226,-24 226,-0 288,-0 288,-24"/>
+<text text-anchor="middle" x="257" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node5" class="node"><title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="360,-24 306,-24 306,-0 360,-0 360,-24"/>
+<text text-anchor="middle" x="333" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node6" class="node"><title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="433.5,-24 378.5,-24 378.5,-0 433.5,-0 433.5,-24"/>
+<text text-anchor="middle" x="406" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node7" class="node"><title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="588,-24 452,-24 452,-0 588,-0 588,-24"/>
+<text text-anchor="middle" x="520" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node8" class="node"><title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="660,-24 606,-24 606,-0 660,-0 660,-24"/>
+<text text-anchor="middle" x="633" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node9" class="node"><title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="775.5,-24 678.5,-24 678.5,-0 775.5,-0 775.5,-24"/>
+<text text-anchor="middle" x="727" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<h5>Module Graph</h5>
+<p>Solid arrows point from a parent (sub)module to the submodule which is
+descended from it. Dashed arrows point from a module being used to the
+module using it.</p>
+<h5>Type Graph</h5>
+<p>Solid arrows point from one derived type to another which extends
+(inherits from) it. Dashed arrows point from a derived type to another
+type containing it as a components, with a label listing the name(s) of
+said component(s).</p>
+<h5>Call Graph</h5>
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+     
+     
+    <br>
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-command_msg%7E2"></span>character(len=256),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>command_msg</strong></td><td> =</td><td>""</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-command_status%7E2"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>command_status</strong></td><td> =</td><td>0</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-count_archive_pages"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>count_archive_pages</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-count_css"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>count_css</strong></td><td> =</td><td>0</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-count_pages"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>count_pages</strong></td><td> =</td><td>0</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-exit_status%7E2"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>exit_status</strong></td><td> =</td><td>0</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-file_exist%7E2"></span>logical,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>file_exist</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    <section>
+    <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="highlight"><pre><span></span>  <span class="k">subroutine </span><span class="n">update</span><span class="p">()</span>
+    <span class="c">!! Build all pages of the blog. The most important procedure of the project!</span>
+    <span class="c">!! This procedure could be called from an other program by including in it module fblog_m.</span>
+    <span class="kt">logical</span> <span class="kd">::</span> <span class="n">file_exist</span>
+    <span class="kt">integer</span> <span class="kd">::</span> <span class="n">command_status</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">count_archive_pages</span><span class="p">,</span> <span class="n">count_css</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">count_pages</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">exit_status</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span> <span class="kd">::</span> <span class="n">command_msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="c">!</span>
+    <span class="k">call </span><span class="n">init_data</span><span class="p">()</span>
+    <span class="k">call </span><span class="n">init_conf</span><span class="p">()</span>
+    <span class="n">header_1</span> <span class="o">=</span> <span class="s1">&#39;&lt;!DOCTYPE html&gt;&#39;</span>
+    <span class="k">if</span> <span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">language</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="n">direction</span> <span class="o">==</span> <span class="s2">&quot;ltr&quot;</span><span class="p">))</span> <span class="n">header_1</span> <span class="o">=</span> <span class="n">header_1</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;html&gt;&#39;</span>
+    <span class="k">if</span> <span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">language</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="n">direction</span> <span class="o">==</span> <span class="s2">&quot;rtl&quot;</span><span class="p">))</span> <span class="n">header_1</span> <span class="o">=</span> <span class="n">header_1</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;html dir=&quot;rtl&quot;&gt;&#39;</span>
+    <span class="k">if</span> <span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">language</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="n">direction</span> <span class="o">==</span> <span class="s2">&quot;ltr&quot;</span><span class="p">))</span> <span class="n">header_1</span> <span class="o">=</span> <span class="n">header_1</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;html lang=&quot;&#39;</span> <span class="o">//</span> <span class="n">language</span> <span class="o">//</span> <span class="s1">&#39;&quot;&gt;&#39;</span>
+    <span class="k">if</span> <span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">language</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="n">direction</span> <span class="o">==</span> <span class="s2">&quot;rtl&quot;</span><span class="p">))</span> <span class="n">header_1</span> <span class="o">=</span> <span class="n">header_1</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;html lang=&quot;&#39;</span> <span class="o">//</span> <span class="n">language</span> <span class="o">//</span> <span class="s1">&#39;&quot; dir=&quot;rtl&quot;&gt;&#39;</span>
+    <span class="n">header_1</span> <span class="o">=</span> <span class="n">header_1</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;head&gt;&#39;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;meta charset=&#39;</span> <span class="o">//</span> <span class="s1">&#39;&quot;&#39;</span> <span class="o">//</span> <span class="n">charset</span> <span class="o">//</span> <span class="s1">&#39;&quot; /&gt;&#39;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;meta name=&quot;generator&quot;&amp;</span>
+<span class="s1">         &amp; content=&quot;fBlog &#39;</span> <span class="o">//</span> <span class="n">VERSION</span> <span class="o">//</span> <span class="s1">&#39;&quot; /&gt;&#39;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">css</span><span class="p">)</span> <span class="n">header_2</span> <span class="o">=</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;link rel=&quot;stylesheet&quot; href=&quot;&#39;</span> <span class="o">//</span> <span class="n">css_file</span> <span class="o">//</span> <span class="s1">&#39;&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;&#39;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;/head&gt;&#39;</span><span class="p">&amp;</span>
+         <span class="p">&amp;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;body&gt;&#39;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;header&gt;&#39;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;h1&gt;&lt;a href=&quot;index.html&quot;&gt;&#39;</span> <span class="o">//</span> <span class="n">blog_title</span> <span class="o">//</span> <span class="s1">&#39;&lt;/a&gt;&lt;/h1&gt;&#39;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;&amp;</span>
+<span class="s1">         &amp;/header&gt;&#39;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">description</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="n">header_2</span> <span class="o">=</span> <span class="n">header_2</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;aside&gt;&#39;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="n">description</span> <span class="o">//</span> <span class="s1">&#39;&lt;/aside&gt;&#39;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">footer</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="n">footer_1</span> <span class="o">=</span> <span class="s1">&#39;&lt;footer&gt;&#39;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;hr /&gt;&#39;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="n">footer</span> <span class="o">//</span> <span class="s1">&#39;&lt;/footer&gt;&#39;</span> <span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;/body&gt;&#39;</span><span class="o">//</span> <span class="n">nl</span> <span class="o">//</span> <span class="s1">&#39;&lt;/html&amp;</span>
+<span class="s1">         &amp;&gt;&#39;</span>
+    <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">()</span> <span class="o">//</span> <span class="n">i18n</span><span class="p">(</span><span class="n">begin_update</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">()</span> <span class="o">//</span> <span class="n">i18n</span><span class="p">(</span><span class="n">initialisation_reading_data</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">()</span> <span class="o">//</span> <span class="n">i18n</span><span class="p">(</span><span class="n">initialisation_reading_conf</span><span class="p">)</span>
+    <span class="k">inquire</span><span class="p">(</span><span class="k">file</span> <span class="o">=</span> <span class="n">path</span> <span class="o">//</span> <span class="n">export_html_dir</span> <span class="o">//</span> <span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="n">exist</span> <span class="o">=</span> <span class="n">file_exist</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">file_exist</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">       print</span> <span class="s1">&#39;(6a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">i18n</span><span class="p">(</span><span class="n">make_clear_subdirectory</span><span class="p">),</span> <span class="s2">&quot;./&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span>
+       <span class="k">call </span><span class="nb">execute_command_line</span><span class="p">(</span><span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;rm &quot;</span><span class="o">//</span> <span class="n">path</span> <span class="o">//</span> <span class="n">export_html_dir</span> <span class="o">//</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">wait</span><span class="o">=</span><span class="p">.</span><span class="n">true</span><span class="p">.,</span> <span class="n">exitstat</span> <span class="o">=</span> <span class="n">exit_status</span><span class="p">,</span> <span class="n">cmdstat</span> <span class="o">=</span><span class="p">&amp;</span>
+            <span class="p">&amp;</span> <span class="n">command_status</span><span class="p">,</span> <span class="n">cmdmsg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+       <span class="k">if</span> <span class="p">(</span><span class="n">exit_status</span> <span class="o">/=</span> <span class="mi">0</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">command_status</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1211</span><span class="p">,</span> <span class="n">cmd_msg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+       <span class="k">print</span> <span class="s1">&#39;(6a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">i18n</span><span class="p">(</span><span class="n">end_clearing_subdirectory</span><span class="p">),</span> <span class="s2">&quot;./&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span>
+    <span class="k">end if</span>
+<span class="k">    if</span> <span class="p">(</span><span class="n">total_entries</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">       print</span> <span class="s1">&#39;(6a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">i18n</span><span class="p">(</span><span class="n">make_permalink_pages</span><span class="p">),</span> <span class="s2">&quot;./&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="s2">&quot;ccyymmddhhmmss.htm(l)&#39;&quot;</span>
+       <span class="k">call </span><span class="n">html_permalink</span><span class="p">()</span>
+       <span class="k">print</span> <span class="s1">&#39;(a,g0,a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">total_entries</span><span class="p">,</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span> <span class="n">i18n</span><span class="p">(</span><span class="n">permalink_pages_built</span><span class="p">)</span>
+       <span class="k">call </span><span class="n">html_month_archive</span><span class="p">(</span><span class="n">n_pages</span> <span class="o">=</span> <span class="n">count_archive_pages</span><span class="p">)</span>
+       <span class="k">print</span> <span class="s1">&#39;(a,g0,2a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">count_archive_pages</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">i18n</span><span class="p">(</span><span class="n">monthly_archive_pages_built</span><span class="p">)</span>
+       <span class="k">print</span> <span class="s1">&#39;(7a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">i18n</span><span class="p">(</span><span class="n">make_archive_pages</span><span class="p">),</span> <span class="s2">&quot;./&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="n">archive</span><span class="p">,</span> <span class="s2">&quot;.html&#39;&quot;</span>
+       <span class="k">call </span><span class="n">html_year_archive</span><span class="p">()</span>
+    <span class="k">end if</span>
+<span class="k">    print</span> <span class="s1">&#39;(6a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">i18n</span><span class="p">(</span><span class="n">make_home_page</span><span class="p">),</span> <span class="s2">&quot;./&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="s2">&quot;index.html&#39;&quot;</span>
+    <span class="k">call </span><span class="n">html_home</span><span class="p">(</span><span class="n">user_home</span> <span class="o">=</span> <span class="n">home</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s1">&#39;(6a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">i18n</span><span class="p">(</span><span class="n">make_pages</span><span class="p">),</span> <span class="s2">&quot;./&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="s2">&quot;*.html&#39;&quot;</span>
+    <span class="k">call </span><span class="n">html_page</span><span class="p">(</span><span class="n">n_pages</span> <span class="o">=</span> <span class="n">count_pages</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s1">&#39;(a,g0,2a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">count_pages</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">i18n</span><span class="p">(</span><span class="n">pages_built</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">css</span><span class="p">)</span> <span class="k">then</span>
+<span class="k">       print</span> <span class="s1">&#39;(7a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">i18n</span><span class="p">(</span><span class="n">copy_css</span><span class="p">),</span> <span class="s2">&quot;./&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="n">css_file</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span>
+       <span class="k">call </span><span class="nb">execute_command_line</span><span class="p">(</span><span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;cp &quot;</span> <span class="o">//</span> <span class="n">path</span> <span class="o">//</span> <span class="n">styles_dir</span> <span class="o">//</span> <span class="n">css_file</span> <span class="o">//</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span> <span class="n">path</span> <span class="o">//</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="n">exitstat</span> <span class="o">=</span><span class="p">&amp;</span>
+            <span class="p">&amp;</span> <span class="n">exit_status</span><span class="p">,</span> <span class="n">cmdstat</span> <span class="o">=</span> <span class="n">command_status</span><span class="p">,</span> <span class="n">cmdmsg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+       <span class="k">if</span> <span class="p">(</span><span class="n">exit_status</span> <span class="o">/=</span> <span class="mi">0</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">command_status</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1212</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">error_css</span><span class="p">))</span>
+    <span class="k">else</span>
+<span class="k">       print</span><span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">i18n</span><span class="p">(</span><span class="n">warn_about_no_css</span><span class="p">)</span>
+    <span class="k">end if</span>
+<span class="k">    if</span> <span class="p">(</span><span class="n">css_print</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="n">total_entries</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">))</span> <span class="k">then</span>
+<span class="k">       print</span> <span class="s1">&#39;(7a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">i18n</span><span class="p">(</span><span class="n">copy_css_print</span><span class="p">),</span> <span class="s2">&quot;./&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="n">css_print_file</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span>
+       <span class="k">call </span><span class="nb">execute_command_line</span><span class="p">(</span><span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;cp &quot;</span> <span class="o">//</span> <span class="n">path</span> <span class="o">//</span> <span class="n">styles_dir</span> <span class="o">//</span> <span class="n">css_print_file</span> <span class="o">//</span> <span class="s2">&quot; &quot;</span> <span class="o">//</span> <span class="n">path</span> <span class="o">//</span> <span class="n">export_html_dir</span><span class="p">,&amp;</span>
+            <span class="p">&amp;</span> <span class="n">exitstat</span> <span class="o">=</span> <span class="n">exit_status</span><span class="p">,</span> <span class="n">cmdstat</span> <span class="o">=</span> <span class="n">command_status</span><span class="p">,</span> <span class="n">cmdmsg</span> <span class="o">=</span> <span class="n">command_msg</span><span class="p">)</span>
+       <span class="k">if</span> <span class="p">(</span><span class="n">exit_status</span> <span class="o">/=</span> <span class="mi">0</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">command_status</span> <span class="o">/=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">call </span><span class="n">terminate</span><span class="p">(</span><span class="n">error_code</span> <span class="o">=</span> <span class="mi">1213</span><span class="p">,</span> <span class="n">inf_msg</span> <span class="o">=</span> <span class="n">i18n</span><span class="p">(</span><span class="n">error_css_print</span><span class="p">))</span>
+    <span class="k">else</span>
+<span class="k">       if</span> <span class="p">(</span><span class="n">css_print</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="n">total_entries</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">))</span> <span class="k">print</span><span class="s1">&#39;(a)&#39;</span><span class="p">,</span> <span class="n">i18n</span><span class="p">(</span><span class="n">warn_about_no_css_print</span><span class="p">)</span>
+    <span class="k">end if</span>
+<span class="k">    print</span> <span class="s1">&#39;(2a)&#39;</span><span class="p">,</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">i18n</span><span class="p">(</span><span class="n">update_done</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">css</span><span class="p">)</span> <span class="n">count_css</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">css_print</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="p">(</span><span class="n">total_entries</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">))</span> <span class="n">count_css</span> <span class="o">=</span> <span class="n">count_css</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">total_entries</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="k">print</span> <span class="s1">&#39;(g0,6a)&#39;</span><span class="p">,</span> <span class="n">count_pages</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">count_css</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">i18n</span><span class="p">(</span><span class="n">files_generated_inside_the_subdirectory</span><span class="p">),</span> <span class="p">&amp;</span>
+         <span class="p">&amp;</span> <span class="s2">&quot;./&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">total_entries</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span><span class="k">print</span> <span class="s1">&#39;(g0,6a)&#39;</span><span class="p">,</span> <span class="n">count_archive_pages</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">total_entries</span><span class="p">)</span> <span class="o">+</span> <span class="n">count_pages</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">count_css</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,&amp;</span>
+         <span class="p">&amp;</span> <span class="n">i18n</span><span class="p">(</span><span class="n">files_generated_inside_the_subdirectory</span><span class="p">),</span> <span class="s2">&quot;./&quot;</span> <span class="o">//</span> <span class="n">path</span><span class="p">,</span> <span class="n">export_html_dir</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span>
+  <span class="k">end subroutine </span><span class="n">update</span>
+</pre></div>
+
+    </section>
+    <br>
+    
+    
+    </div>
+  </div>
+
+    <hr>
+    <footer>
+        <div class="row">
+        <div class="col-md-4">&copy; 2016 <a rel="license" href="http://www.gnu.org/licenses/old-licenses/fdl-1.2.en.html">GNU Free Documentation License</a></div>
+	<div class="col-md-4"><span class="text-center"> fBlog was developed by Denis BERNARD</span></div>
+        <div class="col-md-4"><span class="pull-right">Documentation generated by <a href="https://github.com/cmacmackin/ford">FORD</a></span></div>
+        </div>
+        <br>
+    </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js'],
+        'HTML-CSS': { 
+           styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: '#000000 ! important'} }
+        }
+      });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>
